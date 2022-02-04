@@ -1,0 +1,19 @@
+Ako citat tento subor
+
+Na skuske budete mat pripraveny test, kde bud vyberiete jednu spravnu odpoved - ako bol test dnes na cviceni, alebo budem od vas chciet napisat jeden az dva riadky prikazu, ktory zrealizuje to, co je expected output. Priklady budu rovnake (velmi podobne) ako su tie v knizke 
+https://www.wolfram.com/language/elementary-introduction/2nd-ed/index.html
+Ocakavajte cca 30 otazok, generovanych nahodne z databazy otazok. Mozne su aj otazky takeho typu ako su v tejto knizke v ramci sekcie Q & A
+
+
+- elementarna aritmetika 		vsetky ulohy z nasho prveho cvicenia (aj riesenie rovnic a kreslenie grafov) - 01 - samostatna praca
+
+- zaklady programovania			kapitoly - 2,3,4,5,6,13
+
+- listy a matice			podla nasho cvicenia 03 - vediet nacitat a spracovat datovy subor (mlieko, vzduch, hriadel...)
+
+- funkcionalne programovanie		kapitoly 25,26,27,28,29,30,31,33,47
+
+- datasety, patterns			podla prednasky a cvicenia buduci tyzden + kapitola 32,34,38,45
+
+- dynamicke programovanie		podla prednasky + dam k dispozicii este jednu knihu (to skor vyuzitie pre projekt), 
+					na skusku len zaklady + kapitoly 9,10,12,16

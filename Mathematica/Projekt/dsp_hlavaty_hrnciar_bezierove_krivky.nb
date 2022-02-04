@@ -1,0 +1,316 @@
+Notebook[{Cell[
+CellGroupData[{Cell[
+TextData[{"Vykres\:013eovanie"," ","B\[EAcute]zierovej"," ","krivky"," ","pomocou"," ","algoritmu"," ","de"," ","Casteljau"}],
+"Title",TextAlignment -> Left,ExpressionUUID -> "dda37d7f-244e-4667-a0ef-552ff0ae8554",
+TextJustification -> 0],Cell[
+TextData[{"B\[EAcute]zierov\[EAcute]"," ","krivky"," ","s\[UAcute]"," ","v\[YAcute]razne"," ","pou\[ZHacek]\[IAcute]van\[EAcute]"," ","v"," ","po\[CHacek]\[IAcute]ta\[CHacek]ovej"," ","grafike",StyleBox[
+RowBox[{","," "}]],"anim\[AAcute]cii"," ","a"," ","robotike",StyleBox[RowBox[{","," "}]],"kedy"," ","sa"," ","vytv\[AAcute]ra"," ","s\[UAcute]visl\[AAcute]"," ","krivka"," ","pohybu"," ","mont\[AAcute]\[ZHacek]nych"," ","robotov"," ","aby"," ","sa"," ","predi\[SHacek]lo"," ","opotreb\[UAcute]vaniu",StyleBox[
+RowBox[{"."," "}]],"Matematick\[YAcute]"," ","z\[AAcute]klad"," ","B\[EAcute]zierovych"," ","kriviek"," ","bol"," ","definovan\[YAcute]"," ","u\[ZHacek]"," ","v"," ","roku"," ","1912",StyleBox[
+RowBox[{" ","-"," "}]],"Bernsteinove"," ","polyn\[OAcute]my",StyleBox[RowBox[{","," "}]],"av\[SHacek]ak"," ","efekt\[IAcute]vny"," ","sp\[OHat]sob"," ","vykres\:013eovania"," ","kriviek"," ","bol"," ","objaven\[YAcute]"," ","a\[ZHacek]"," ","v"," ","roku"," ","1959"," ","Paul"," ","de"," ","Casteljauom",StyleBox[
+RowBox[{","," "}]],"ktor\[YAcute]"," ","vymyslel"," ","v\[YAcute]po\[CHacek]tovo"," ","jednoduch\[YAcute]"," ","a"," ","stabiln\[YAcute]"," ","algoritmus",StyleBox[
+RowBox[{" ","-"," "}]],"de"," ","Casteljauov"," ","algoritmus",".","\n","\n","Krivka"," ","je"," ","definovan\[AAcute]"," ","\[SHacek]tyrmi"," ","kontroln\[YAcute]mi"," ","bodmi",StyleBox[
+RowBox[{","," "}]],"ktor\[EAcute]"," ","definuj\[UAcute]"," ","kreslen\[UAcute]"," ","krivku",StyleBox[
+RowBox[{"."," "}]],"D\[AAcute]"," ","sa"," ","pou\[ZHacek]i\[THacek]"," ","aj"," ","vy\[SHacek]\[SHacek]\[IAcute]"," ","po\[CHacek]et"," ","kontroln\[YAcute]ch"," ","bodov",StyleBox[
+RowBox[{","," "}]],"ale"," ","to"," ","zvy\[SHacek]uje"," ","v\[YAcute]po\[CHacek]tov\[UAcute]"," ","zlo\[ZHacek]itos\[THacek]"," ","a"," ","v\[SHacek]etky"," ","krivky"," ","je"," ","mo\[ZHacek]n\[EAcute]"," ","vykresli\[THacek]"," ","pomocou"," ","kriviek"," ","definovan\[YAcute]ch"," ","\[SHacek]tyrmi"," ","bodmi",StyleBox[
+RowBox[{","," "}]],"ktor\[EAcute]"," ","sa"," ","sp\[AAcute]jaj\[UAcute]",StyleBox[
+RowBox[{"."," "}]],"Zvy\[CHacek]ajne"," ","sa"," ","to"," ","rob\[IAcute]"," ","tak",StyleBox[
+RowBox[{","," "}]],"\[ZHacek]e"," ","posledn\[YAcute]"," ","bod"," ","jednej"," ","krivky"," ","je"," ","prv\[YAcute]m"," ","bodom"," ","nasleduj\[UAcute]cej",StyleBox[
+RowBox[{" ","("}]],"taktie\[ZHacek]"," ","zn\[AAcute]me"," ","aj"," ","ako"," ","C0"," ","spojitos\[THacek]",StyleBox[
+RowBox[{" ","-"," "}]],"dve"," ","krivky"," ","s\[UAcute]"," ","spojen\[EAcute]",StyleBox[
+RowBox[{"),"," "}]],"ale"," ","ak"," ","je"," ","potrebn\[EAcute]"," ","aj"," ","s\[UAcute]visl\[EAcute]"," ","zakrivenie",StyleBox[
+RowBox[{","," "}]],"zdie\:013eaj\[UAcute]"," ","sa"," ","dva",StyleBox[RowBox[{" ","("}]],"C1"," ","spojitos\[THacek]",StyleBox[
+RowBox[{" ","-"," "}]],"smer"," ","a",StyleBox[RowBox[{" ","\""}]],"r\[YAcute]chlos\[THacek]",StyleBox[
+RowBox[{"\""," "}]],"pohybu"," ","sa"," ","nemen\[IAcute]"," ","skokom",StyleBox[
+RowBox[{")"," "}]],"alebo"," ","a\[ZHacek]"," ","tri",StyleBox[RowBox[{" ","("}]],"C2"," ","spojitos\[THacek]",StyleBox[
+RowBox[{" ","-"," "}]],"krivka"," ","nemen\[IAcute]",StyleBox[RowBox[{" ","\""}]],"zr\[YAcute]chenie",StyleBox[
+RowBox[{"\")"," "}]],"kontroln\[EAcute]"," ","body"," ","medzi"," ","dvoma"," ","krivkami",".","\n","\n","Pre"," ","demo\[SHacek]trat\[IAcute]vne"," ","\[UAcute]\[CHacek]ely"," ","n\[AAcute]m"," ","sta\[CHacek]\[IAcute]"," ","jedna"," ","krivka"," ","definovan\[AAcute]"," ","\[SHacek]tyrmi"," ","bodmi",":"}],
+"Text",TextAlignment -> Left,ExpressionUUID -> "8e272d2d-e206-4125-ba5a-0d479e380a90",
+TextJustification -> 1],Cell[
+BoxData[RowBox[{RowBox[{"(*"," ",RowBox[{RowBox[{"controlPoints"," ","="," ",RowBox[
+{"{",RowBox[{RowBox[{"{",RowBox[{"0.636",","," ","0.22"}],"}"}],","," ",RowBox[{"{",RowBox[
+{"0.465",","," ","0.94"}],"}"}],","," ",RowBox[{"{",RowBox[{RowBox[{"-","0.465"}],","," ","0.94"}],"}"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"-","0.636"}],","," ","0.22"}],"}"}]}],"}"}]}],";"}]," ","*)"}],"\n",RowBox[
+{RowBox[{"controlPoints","=",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{"0.6",",","0.5"}],"}"}],","," ","\n",RowBox[
+{"{",RowBox[{"0.2",",","0.8"}],"}"}],",","\n",RowBox[{"{",RowBox[{RowBox[{"-","0.2"}],",","0.2"}],"}"}],",","\n",RowBox[
+{"{",RowBox[{RowBox[{"-","0.6"}],",","0.5"}],"}"}]}],"}"}]}],";"}]}]],"Input",CellLabel -> "In[1]:= ",
+ExpressionUUID -> "a561bfa9-a48c-45ea-918e-9052d5bb232d"],Cell[
+TextData[{"N\[AAcute]sledne"," ","je"," ","definovan\[AAcute]"," ","funkcia"," ","na"," ","interpol\[AAcute]ciu"," ","bodu"," ","medzi"," ","dvomi"," ","predom"," ","vytvoren\[YAcute]mi"," ","bodmi",StyleBox[
+RowBox[{"."," "}]],"Funkcia"," ","vezme"," ",StyleBox["x",FontSlant -> Italic]," ","a"," ",StyleBox[
+"y",FontSlant -> Italic]," ","s\[UAcute]radnice"," ","bodov"," ",StyleBox["p0",FontSlant -> Italic],StyleBox[
+" ",FontSlant -> Italic],StyleBox["a",FontSlant -> Plain],StyleBox[" ",FontSlant -> Italic],StyleBox[
+"p1",FontSlant -> Italic]," ","a"," ","n\[AAcute]jde"," ","bod"," ","posunut\[YAcute]"," ","od"," ","bodu"," ",StyleBox[
+"p0",FontSlant -> Italic]," ","o"," ",StyleBox["t",FontSlant -> Italic]," ","krokov"," ","smerom"," ","k"," ","bodu"," ",StyleBox[
+"p1",FontSlant -> Italic],":"}],"Text",TextAlignment -> Left,ExpressionUUID -> "caa3dbd6-5e41-438b-8c59-21a34508d420",
+TextJustification -> 1],Cell[
+BoxData[RowBox[{RowBox[{"interpolate","[",RowBox[{"p0_List",","," ","p1_List",",","t_"}],"]"}],":=",RowBox[
+{"(","\n",RowBox[{RowBox[{"intx","=",RowBox[{RowBox[{"t","*",RowBox[{"p0","[",RowBox[
+{"[","1","]"}],"]"}]}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*",RowBox[
+{"p1","[",RowBox[{"[","1","]"}],"]"}]}]}]}],";","\n",RowBox[{"inty","=",RowBox[{RowBox[
+{"t","*",RowBox[{"p0","[",RowBox[{"[","2","]"}],"]"}]}],"+",RowBox[{RowBox[{"(",RowBox[
+{"1","-","t"}],")"}],"*",RowBox[{"p1","[",RowBox[{"[","2","]"}],"]"}]}]}]}],";","\n",RowBox[
+{"{",RowBox[{"intx",",","inty"}],"}"}]}],")"}]}]],"Input",CellLabel -> "In[2]:= ",
+ExpressionUUID -> "80ebc32f-2ba2-4559-be05-7e25e041e1b5"],Cell[
+TextData[{"Funkcia"," ",StyleBox[
+"bezierPoint",FontSlant -> Italic]," ","vezme"," ","\[SHacek]tyri"," ","kontroln\[EAcute]"," ","body"," ","a"," ","vypo\[CHacek]\[IAcute]ta"," ","bod"," ","B\[EAcute]zierovej"," ","krivky"," ","v"," ","konkr\[EAcute]tnom"," ","kroku"," ",StyleBox[
+"t",FontSlant -> Italic],StyleBox[RowBox[{StyleBox[".",FontSlant -> Plain],StyleBox[
+" ",FontSlant -> Plain]}]],StyleBox["Na",FontSlant -> Plain],StyleBox[" ",FontSlant -> Plain],StyleBox[
+"v\[YAcute]po\[CHacek]et",FontSlant -> Plain],StyleBox[" ",FontSlant -> Plain],StyleBox[
+RowBox[{StyleBox["s",FontSlant -> Plain],"a"}]]," ","vyu\[ZHacek]\[IAcute]va"," ","predom"," ","definovan\[AAcute]"," ","funkcia"," ","interpolate",StyleBox[
+RowBox[{","," "}]],"ktor\[AAcute]"," ","najprv"," ","vezme"," ","prv\[EAcute]"," ","dva"," ","body",StyleBox[
+RowBox[{","," "}]],"potom"," ","druh\[YAcute]"," ","s"," ","tret\[IAcute]m",StyleBox[
+RowBox[{","," "}]],"a"," ","nakoniec"," ","posledn\[EAcute]"," ","dva"," ","body",StyleBox[
+RowBox[{"."," "}]],"Tieto"," ","tri"," ","body"," ","sa"," ","nach\[AAcute]dzaj\[UAcute]"," ","na"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","definovan\[YAcute]ch"," ","kontroln\[YAcute]mi"," ","bodmi",StyleBox[
+RowBox[{" ","("}]],"jedna"," ","\[UAcute]se\[CHacek]ka"," ","je"," ","medzi"," ","prv\[YAcute]m"," ","a"," ","druh\[YAcute]m"," ","bodom",StyleBox[
+RowBox[{","," "}]],"\[DHacek]al\[SHacek]ia"," ","medzi"," ","druh\[YAcute]m"," ","a"," ","tret\[IAcute]m",StyleBox[
+RowBox[{","," "}]],"a"," ","tretia"," ","medzi"," ","tret\[IAcute]m"," ","a"," ","\[SHacek]tvrt\[YAcute]m"," ","kontroln\[YAcute]m"," ","bodom",StyleBox[
+RowBox[{")."," "}]],"\n","\n","N\[AAcute]sledne"," ","medzi"," ","interpolovan\[YAcute]mi"," ","bodmi"," ","vznikn\[UAcute]"," ","dve"," ","\[UAcute]se\[CHacek]ky",StyleBox[
+RowBox[{","," "}]],"pri\[CHacek]om"," ","na"," ","ka\[ZHacek]dej"," ","sa"," ","op\[ADoubleDot]\[THacek]"," ","vypo\[CHacek]\[IAcute]ta"," ","bod",StyleBox[
+RowBox[{"."," "}]],"Vzniknut\[EAcute]"," ","dve"," ","body"," ","definuj\[UAcute]"," ","posledn\[UAcute]"," ","\[UAcute]se\[CHacek]ku",StyleBox[
+RowBox[{","," "}]],"na"," ","ktorej"," ","sa"," ","interpoluje"," ","bod"," ","kresliaci"," ","samotn\[UAcute]"," ","krivku",".","\n","\n","Krok"," ",StyleBox[
+"t",FontSlant -> Italic]," ","ur\[CHacek]uje"," ","hustotu"," ","krivky",StyleBox[
+RowBox[{"."," "}]],"Mal\[EAcute]"," ",StyleBox["t",FontSlant -> Italic]," ","definuje"," ","nepresn\[UAcute]"," ","a",StyleBox[
+RowBox[{" ","\""}]],"hranat\[UAcute]",StyleBox[RowBox[{"\""," "}]],"krivku",StyleBox[
+RowBox[{","," "}]],"naopak"," ","ve\:013ek\[EAcute]"," ",StyleBox["t",FontSlant -> Italic]," ","je"," ","v\[YAcute]po\[CHacek]tovo"," ","n\[AAcute]ro\[CHacek]n\[EAcute]",StyleBox[
+RowBox[{"."," "}]],"Napr\[IAcute]klad"," ","ak"," ",StyleBox["t",FontSlant -> Italic],StyleBox[
+RowBox[{" ","="," "}]],"100",StyleBox[RowBox[{","," "}]],StyleBox["bezierPoint",FontSlant -> Italic]," ","je"," ","potrebn\[EAcute]"," ","zavola\[THacek]"," ","100","-","kr\[AAcute]t",StyleBox[
+RowBox[{"."," "}]],"Algoritmus"," ","v\[SHacek]ak"," ","nepracuje"," ","so"," ","samotnou"," ","hodnotou"," ","kroku",StyleBox[
+RowBox[{","," "}]],"ale"," ","s"," ","pomerom"," ","vo\[CHacek]i"," ","celkov\[EAcute]mu"," ","po\[CHacek]tu"," ","krokov",StyleBox[
+RowBox[{","," "}]],"tak\[ZHacek]e"," ","v"," ","pr\[IAcute]pade",StyleBox[RowBox[
+{","," "}]],"\[ZHacek]e"," ","po\[CHacek]et"," ","krokov"," ","je"," ","100"," ","a"," ",StyleBox[
+"t",FontSlant -> Italic],StyleBox[RowBox[{" ","="," "}]],"2",StyleBox[RowBox[{","," "}]],"do"," ","funkcie"," ","sa"," ","posiela"," ","2","/","100",StyleBox[
+RowBox[{"."," "}]],"Takto"," ","sa"," ","zabezpe\[CHacek]\[IAcute]",StyleBox[RowBox[
+{","," "}]],"aby"," ",StyleBox["t",FontSlant -> Italic]," ","bolo"," ","z"," ","intervalu",StyleBox[
+RowBox[{" ","<"}]],"0",StyleBox[RowBox[{","," "}]],"1",">."}],"Text",TextAlignment -> Left,
+ExpressionUUID -> "ae73f7dc-5761-47c9-9138-a0affe2040b6",TextJustification -> 1],Cell[
+BoxData[
+RowBox[{RowBox[{"bezierPoint","[",RowBox[{"p0_List",",","p1_List",",","p2_List",",","p3_List",",","t_"}],"]"}],":=",RowBox[
+{"(","\n",RowBox[{"(*",RowBox[{"Interpol\[AAcute]cia"," ","prv\[YAcute]ch"," ","troch"," ","bodov"}],"*)"}],"\n",RowBox[
+{RowBox[{"lin1","=",RowBox[{"interpolate","[",RowBox[{"p0",",","p1",",","t"}],"]"}]}],";","\n",RowBox[
+{"lin2","=",RowBox[{"interpolate","[",RowBox[{"p1",",","p2",",","t"}],"]"}]}],";","\n",RowBox[
+{"lin3","=",RowBox[{"interpolate","[",RowBox[{"p2",",","p3",",","t"}],"]"}]}],";","\n","\n",RowBox[
+{"(*",RowBox[{"Interpol\[AAcute]cia"," ","dvoch"," ","bodov"," ","na"," ","interpolovan\[YAcute]ch"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"}],"*)"}],"\n",RowBox[
+{"quad1","=",RowBox[{"interpolate","[",RowBox[{"lin1",",","lin2",",","t"}],"]"}]}],";","\n",RowBox[
+{"quad2","=",RowBox[{"interpolate","[",RowBox[{"lin2",",","lin3",",","t"}],"]"}]}],";","\n","\n",RowBox[
+{"(*",RowBox[{"Interpol\[AAcute]cia"," ","kresliaceho"," ","bodu"," ","na"," ","interpolovanej"," ","\[UAcute]se\[CHacek]ke"}],"*)"}],"\n",RowBox[
+{"cub1","=",RowBox[{"interpolate","[",RowBox[{"quad1",",","quad2",",","t"}],"]"}]}],";","\n","cub1"}],")"}]}]],
+"Input",CellLabel -> "In[3]:= ",ExpressionUUID -> "7f4e6d9a-2dea-4721-bdfa-b2934c203fcd"],Cell[
+TextData[
+{"N\[AAcute]sledne"," ","sa"," ","vytvor\[IAcute]"," ","tabu\:013eka"," ","hodn\[OHat]t",StyleBox[
+RowBox[{"."," "}]],"Prv\[EAcute]"," ","tri"," ","st\:013apce"," ","definuj\[UAcute]"," ","prv\[EAcute]"," ","dve"," ","\[UAcute]se\[CHacek]ky",StyleBox[
+RowBox[{","," "}]],"respekt\[IAcute]ve"," ","interpolovan\[EAcute]"," ","body"," ","v"," ","danom"," ","kroku"," ","na"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","definovan\[YAcute]ch"," ","kontroln\[YAcute]mi"," ","bodmi",StyleBox[
+RowBox[{"."," "}]],"Nasleduj\[UAcute]ce"," ","dva"," ","st\:013apce"," ","popisuj\[UAcute]"," ","body"," ","na"," ","interpolovan\[YAcute]ch"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","a"," ","posledn\[YAcute]"," ","st\:013apec"," ","ur\[CHacek]uje"," ","kadia\:013e"," ","ide"," ","samotn\[AAcute]"," ","B\[EAcute]zierova"," ","krivka","."}],
+"Text",TextAlignment -> Left,ExpressionUUID -> "98cd9ca8-44e4-4d41-8f5f-ceb18693def7",
+TextJustification -> 1],Cell[
+BoxData[RowBox[{RowBox[{"table"," ","="," ",RowBox[
+{"Table","[",RowBox[{RowBox[{"{","\n",RowBox[{"(*",RowBox[{"Poz\[IAcute]cie"," ","prv\[YAcute]ch"," ","troch"," ","bodov"}],"*)"}],"\n",RowBox[
+{RowBox[{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[{"[","1","]"}],"]"}],","," ",RowBox[
+{"controlPoints","[",RowBox[{"[","2","]"}],"]"}],","," ",RowBox[{"t","/","100"}]}],"]"}],",","\n",RowBox[
+{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[{"[","2","]"}],"]"}],","," ",RowBox[
+{"controlPoints","[",RowBox[{"[","3","]"}],"]"}],","," ",RowBox[{"t","/","100"}]}],"]"}],",","\n",RowBox[
+{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[{"[","3","]"}],"]"}],",",RowBox[
+{"controlPoints","[",RowBox[{"[","4","]"}],"]"}],","," ",RowBox[{"t","/","100"}]}],"]"}],",","\n","\n",RowBox[
+{"(*",RowBox[{"Poz\[IAcute]cie"," ","bodov"," ","na"," ","interpolovan\[YAcute]ch"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"}],"*)"}],"\n",RowBox[
+{"interpolate","[",RowBox[{RowBox[{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[
+{"[","1","]"}],"]"}],","," ",RowBox[{"controlPoints","[",RowBox[{"[","2","]"}],"]"}],","," ",RowBox[
+{"t","/","100"}]}],"]"}],",",RowBox[{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[
+{"[","2","]"}],"]"}],","," ",RowBox[{"controlPoints","[",RowBox[{"[","3","]"}],"]"}],","," ",RowBox[
+{"t","/","100"}]}],"]"}],","," ",RowBox[{"t","/","100"}]}],"]"}],",","\n",RowBox[
+{"interpolate","[",RowBox[{RowBox[{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[
+{"[","2","]"}],"]"}],","," ",RowBox[{"controlPoints","[",RowBox[{"[","3","]"}],"]"}],","," ",RowBox[
+{"t","/","100"}]}],"]"}],",",RowBox[{"interpolate","[",RowBox[{RowBox[{"controlPoints","[",RowBox[
+{"[","3","]"}],"]"}],","," ",RowBox[{"controlPoints","[",RowBox[{"[","4","]"}],"]"}],","," ",RowBox[
+{"t","/","100"}]}],"]"}],","," ",RowBox[{"t","/","100"}]}],"]"}],",","\n","\n",RowBox[
+{"(*",RowBox[{"Poz\[IAcute]cia"," ","B\[EAcute]zierovej"," ","krivky"}],"*)"}],"\n",RowBox[
+{"bezierPoint","[",RowBox[{RowBox[{"controlPoints","[",RowBox[{"[","1","]"}],"]"}],",",RowBox[
+{"controlPoints","[",RowBox[{"[","2","]"}],"]"}],",",RowBox[{"controlPoints","[",RowBox[
+{"[","3","]"}],"]"}],",",RowBox[{"controlPoints","[",RowBox[{"[","4","]"}],"]"}],",",RowBox[
+{"t","/","100"}]}],"]"}]}],"}"}],","," ","\n",RowBox[{"{",RowBox[{"t",","," ","1",",","100"}],"}"}]}],"]"}]}],";"}]],
+"Input",CellLabel -> "In[4]:= ",ExpressionUUID -> "26d0d469-9ab8-4512-83f7-c604e745a308"],Cell[
+TextData[
+{"Najprv"," ","je"," ","potrebn\[EAcute]"," ","vykresli\[THacek]"," ","kontroln\[EAcute]"," ","body",StyleBox[
+RowBox[{","," "}]],"ktor\[EAcute]"," ","s\[UAcute]"," ","pevne"," ","definovan\[EAcute]",StyleBox[
+RowBox[{","," "}]],"ostatn\[EAcute]"," ","\[CHacek]asti"," ","sa"," ","menia"," ","pod\:013ea"," ","kroku",StyleBox[
+RowBox[{"."," "}]],"Po"," ","kontroln\[YAcute]ch"," ","bodoch"," ","a"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","medzi"," ","nimi"," ","sa"," ","vykreslia"," ","body"," ","na"," ","t\[YAcute]chto"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","a"," ","interpolovan\[EAcute]"," ","\[UAcute]se\[CHacek]ky",StyleBox[
+RowBox[{"."," "}]],"N\[AAcute]sledne"," ","sa"," ","vykreslia"," ","\[DHacek]al\[SHacek]ie"," ","dva"," ","body"," ","a"," ","\[UAcute]se\[CHacek]ka"," ","medzi"," ","nimi",StyleBox[
+RowBox[{","," "}]],"a"," ","nakoniec"," ","sa"," ","kresl\[IAcute]"," ","samotn\[AAcute]"," ","B\[EAcute]zierova"," ","krivka",".","\n","\n","M\[OHat]\[ZHacek]eme"," ","si"," ","v\[SHacek]imn\[UAcute]\[THacek]",StyleBox[
+RowBox[{","," "}]],"\[ZHacek]e"," ","\[UAcute]se\[CHacek]ky"," ","sa"," ","pohybuj\[UAcute]"," ","pod\:013ea"," ","kroku"," ","t",StyleBox[
+RowBox[{","," "}]],"ktor\[YAcute]"," ","je"," ","taktie\[ZHacek]"," ","zobrazen\[YAcute]"," ","pod"," ","grafom",StyleBox[
+RowBox[{"."," "}]],"Krivka"," ","sleduje"," ","polohu"," ","interpolovan\[YAcute]ch"," ","\[UAcute]se\[CHacek]iek"," ","a"," ","bodov"," ","na"," ","nich",StyleBox[
+RowBox[{","," "}]],"a\[ZHacek]"," ","k\[YAcute]m"," ","sa"," ","nevykresl\[IAcute]"," ","cel\[AAcute]"," ","a"," ","anim\[AAcute]cia"," ","za\[CHacek]ne"," ","odznova","."}],
+"Text",TextAlignment -> Left,ExpressionUUID -> "de029530-9572-4024-afdc-68b2cc33fcc2",
+TextJustification -> 1],Cell[
+CellGroupData[{Cell[
+BoxData[RowBox[{"Pane","[",RowBox[
+{"Animate","[",RowBox[{RowBox[{"Show","[","\n",RowBox[{"(*",RowBox[{"Kontroln\[EAcute]"," ","body"," ","a"," ","\[UAcute]se\[CHacek]ky"," ","medzi"," ","nimi"}],"*)"}],"\n",RowBox[
+{RowBox[{"Graphics","[",RowBox[{"{",RowBox[{"Black",","," ","Dashed",",",RowBox[{"Line","[","controlPoints","]"}],",",RowBox[
+{"PointSize","[","Large","]"}],",","Red",",",RowBox[{"Point","[","controlPoints","]"}]}],"}"}],"]"}],","," ","\n","\n",RowBox[
+{"(*",RowBox[{"Prv\[EAcute]"," ","interpolovan\[EAcute]"," ","body"," ","a"," ","\[UAcute]se\[CHacek]ky"," ","medzi"," ","nimi"}],"*)"}],"\n",RowBox[
+{"Graphics","[",RowBox[{"{",RowBox[{"Blue",","," ",RowBox[{"Line","[",RowBox[{"{",RowBox[
+{RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","1"}],"]"}],"]"}],",",RowBox[{"table","[",RowBox[
+{"[",RowBox[{"t",",","2"}],"]"}],"]"}],",",RowBox[{"table","[",RowBox[{"[",RowBox[
+{"t",",","3"}],"]"}],"]"}]}],"}"}],"]"}],",","\n","Black",","," ",RowBox[{"Point","[",RowBox[
+{"table","[",RowBox[{"[",RowBox[{"t",",","1"}],"]"}],"]"}],"]"}],",","\n",RowBox[
+{"Point","[",RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","2"}],"]"}],"]"}],"]"}],",","\n",RowBox[
+{"Point","[",RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","3"}],"]"}],"]"}],"]"}]}],"\n","}"}],"]"}],",","\n","\n",RowBox[
+{"(*",RowBox[{"Body"," ","na"," ","interpolovan\[YAcute]ch"," ","\[UAcute]se\[CHacek]k\[AAcute]ch"," ","a"," ","\[DHacek]al\[SHacek]ia"," ","\[UAcute]se\[CHacek]ka"," ","medzi"," ","nimi"}],"*)"}],"\n",RowBox[
+{"Graphics","[",RowBox[{"{",RowBox[{"Green",","," ",RowBox[{"Line","[",RowBox[{"{",RowBox[
+{RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","4"}],"]"}],"]"}],",",RowBox[{"table","[",RowBox[
+{"[",RowBox[{"t",",","5"}],"]"}],"]"}]}],"}"}],"]"}],",","\n","Black",","," ",RowBox[
+{"Point","[",RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","4"}],"]"}],"]"}],"]"}],",","\n",RowBox[
+{"Point","[",RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","5"}],"]"}],"]"}],"]"}],",","\n",RowBox[
+{"Point","[",RowBox[{"table","[",RowBox[{"[",RowBox[{"t",",","6"}],"]"}],"]"}],"]"}]}],"\n","}"}],"]"}],",","\n","\n",RowBox[
+{"(*",RowBox[{"Text"," ","zobrazuj\[UAcute]ci"," ","moment\[AAcute]lny"," ",RowBox[
+{"krok"," ","/"," ","100"}]}],"*)"}],"\n",RowBox[{"Graphics","[",RowBox[{"{",RowBox[
+{"Text","[",RowBox[{"\"t = \""," ","<>"," ",RowBox[{"ToString","[",RowBox[{RowBox[
+{"t","/","100"}],"//","N"}],"]"}]}],"]"}],"}"}],"]"}],",","\n","\n",RowBox[{"(*",RowBox[
+{"B\[EAcute]zierova"," ","krivka"}],"*)"}],"\n",RowBox[{"ListLinePlot","[",RowBox[
+{RowBox[{"table","[",RowBox[{"[",RowBox[{RowBox[{"1",";;","t"}],",","6"}],"]"}],"]"}],","," ",RowBox[
+{"PlotStyle","\[Rule]",RowBox[{"{",RowBox[{"Red",","," ","Thick"}],"}"}]}]}],"]"}]}],"]"}],","," ","\n",RowBox[
+{"{",RowBox[{"t",",","1",",","100",",","1"}],"}"}],","," ",RowBox[{"AnimationRate","\[Rule]","4"}]}],"\n","]"}],"]"}]],
+"Input",CellLabel -> "In[5]:= ",ExpressionUUID -> "bd11d7da-e5ba-4def-b8d4-71c343350a60"],Cell[
+BoxData[
+PaneBox[TagBox[StyleBox[DynamicModuleBox[{Set[t$$,27],Set[Typeset`show$$,True],Set[
+Typeset`bookmarkList$$,{}],Set[Typeset`bookmarkMode$$,"Menu"],Typeset`animator$$,Set[
+Typeset`animvar$$,1],Set[Typeset`name$$,"\"untitled\""],Set[Typeset`specs$$,{{Hold[
+t$$],1,100,1}}],Set[Typeset`size$$,Automatic],Set[Typeset`update$$,0],Set[Typeset`initDone$$,
+False],Set[Typeset`skipInitDone$$,True]},DynamicBox[Manipulate`ManipulateBoxes[1,
+StandardForm,RuleDelayed["Variables",{Set[t$$,1]}],RuleDelayed["ControllerVariables",
+{}],RuleDelayed["OtherVariables",{Typeset`show$$,Typeset`bookmarkList$$,Typeset`bookmarkMode$$,Typeset`animator$$,Typeset`animvar$$,Typeset`name$$,Typeset`specs$$,Typeset`size$$,Typeset`update$$,Typeset`initDone$$,Typeset`skipInitDone$$}],
+RuleDelayed["Body",Show[Graphics[{Black,Dashed,Line[controlPoints],PointSize[Large],Red,Point[
+controlPoints]}],Graphics[{Blue,Line[{Part[table,t$$,1],Part[table,t$$,2],Part[table,
+t$$,3]}],Black,Point[Part[table,t$$,1]],Point[Part[table,t$$,2]],Point[Part[table,
+t$$,3]]}],Graphics[{Green,Line[{Part[table,t$$,4],Part[table,t$$,5]}],Black,Point[
+Part[table,t$$,4]],Point[Part[table,t$$,5]],Point[Part[table,t$$,6]]}],Graphics[{Text[
+StringJoin["t = ",ToString[N[Times[t$$,Power[100,-1]]]]]]}],ListLinePlot[Part[table,
+Span[1,t$$],6],PlotStyle -> {Red,Thick}]]],RuleDelayed["Specifications",{{t$$,1,100,1,AnimationRate -> 4,AppearanceElements -> {"ProgressSlider","PlayPauseButton","FasterSlowerButtons","DirectionButton"}}}],
+RuleDelayed["Options",{ControlType -> Animator,AppearanceElements -> None,DefaultBaseStyle -> "Animate",DefaultLabelStyle -> "AnimateLabel",SynchronousUpdating -> True,ShrinkingDelay -> 10.`}],
+RuleDelayed["DefaultOptions",{}]],SingleEvaluation -> True],RuleDelayed[DynamicModuleValues,
+{}],RuleDelayed[Deinitialization,None],RuleDelayed[UntrackedVariables,{Typeset`size$$}],
+SynchronousInitialization -> True,RuleDelayed[UnsavedVariables,{Typeset`initDone$$}],
+RuleDelayed[UndoTrackedVariables,{Typeset`show$$,Typeset`bookmarkMode$$}],ExpressionUUID -> "02a736c6-e820-40bf-8c0d-a20096205766"],
+"Animate",Deployed -> True,StripOnInput -> False],Manipulate`InterpretManipulate[
+1]]],StandardForm],"Output",CellLabel -> "Out[5]= ",ExpressionUUID -> "ec248c14-ba6f-459d-8f68-29a9dc0460d7"]},
+Open],ExpressionUUID -> "5f9935d3-0357-4d8f-a035-870317962557"],Cell[
+CellGroupData[
+{Cell[
+TextData[{"Roz\[SHacek]\[IAcute]renie"," ","programu"}],"Section",ExpressionUUID -> "1d9dd0e6-1b81-49ad-bba0-a1125ddec7ab"],Cell[
+TextData[
+{"Ako"," ","bolo"," ","predt\[YAcute]m"," ","spom\[IAcute]nan\[EAcute]",StyleBox[
+RowBox[{","," "}]],"algoritmus"," ","je"," ","mo\[ZHacek]n\[EAcute]"," ","pomerne"," ","jednoducho"," ","upravi\[THacek]",StyleBox[
+RowBox[{","," "}]],"aby"," ","namiesto"," ","kriviek"," ","vytv\[AAcute]ral"," ","plochy",StyleBox[
+RowBox[{"."," "}]],"Najprv"," ","si"," ","mus\[IAcute]me"," ","vytvori\[THacek]"," ","nov\[EAcute]"," ","kontroln\[EAcute]"," ","body",StyleBox[
+RowBox[{","," "}]],"no"," ","v"," ","tomto"," ","pr\[IAcute]pade"," ","ich"," ","potrebujeme"," ","aspo\[NHacek]"," ","16",StyleBox[
+RowBox[{" ","("}]],"4"," ","kontroln\[EAcute]"," ","do"," ","jednej"," ","strany"," ","x"," ","4"," ","kontroln\[EAcute]"," ","body"," ","do"," ","druhej"," ","strany",StyleBox[
+RowBox[{")."," "}]],"Ke\[DHacek]\[ZHacek]e"," ","pracujeme"," ","v"," ","troch"," ","dimenzi\[AAcute]ch",StyleBox[
+RowBox[{","," "}]],"mus\[IAcute]me"," ","prida\[THacek]"," ","aj"," ","z","-","ov\[UAcute]"," ","s\[UAcute]radnicu"," ","ku"," ","ka\[ZHacek]d\[EAcute]mu"," ","bodu",".","\n","\n","Interpola\[CHacek]n\[AAcute]"," ","funkcia"," ","je"," ","takmer"," ","rovnak\[AAcute]"," ","s"," ","t\[YAcute]m",StyleBox[
+RowBox[{","," "}]],"\[ZHacek]e"," ","bola"," ","pridan\[AAcute]"," ","interpol\[AAcute]cia"," ","bodu"," ","v"," ","z","-","ovej"," ","osi",StyleBox[
+RowBox[{"."," "}]],"bezierPoint"," ","je"," ","\[UAcute]plne"," ","rovnak\[YAcute]",StyleBox[
+RowBox[{","," "}]],"no"," ","mus\[IAcute]me"," ","prida\[THacek]"," ","\[DHacek]al\[SHacek]iu"," ","funkciu"," ",StyleBox[
+"bezierPatch",FontSlant -> Italic],StyleBox[RowBox[{","," "}]],"ktor\[AAcute]"," ","vygeneruje"," ","samotn\[UAcute]"," ","plochu",StyleBox[
+RowBox[{"."," "}]],"Pri"," ",StyleBox["bezierPatch",FontSlant -> Italic]," ","mus\[IAcute]me"," ","nastavi\[THacek]"," ","dodato\[CHacek]n\[EAcute]"," ","argumenty"," ","u"," ","a"," ","v",StyleBox[
+RowBox[{","," "}]],"\[CHacek]o"," ","s\[UAcute]"," ","v"," ","podstate"," ","argument"," ","t",StyleBox[
+RowBox[{","," "}]],"ale"," ","v"," ","dvoch"," ","dimenzi\[AAcute]ch",StyleBox[RowBox[
+{","," "}]],"nako\:013eko"," ","okrem"," ","\[SHacek]\[IAcute]rky"," ","ako"," ","pri"," ","krivk\[AAcute]ch",StyleBox[
+RowBox[{","," "}]],"m\[AAcute]"," ","plocha"," ","aj"," ","nejak\[UAcute]"," ","d\:013a\[ZHacek]ku",StyleBox[
+RowBox[{"."," "}]],"Ve\:013ekos\[THacek]"," ",StyleBox["u",FontSlant -> Italic]," ","a"," ",StyleBox[
+"v",FontSlant -> Italic]," ","taktie\[ZHacek]"," ","ur\[CHacek]\[IAcute]",StyleBox[
+RowBox[{","," "}]],"z"," ","ko\:013ek\[YAcute]ch"," ","\[SHacek]tvorcov"," ","sa"," ","bude"," ","plocha"," ","sklada\[THacek]"," ","v"," ","danom"," ","smere",StyleBox[
+RowBox[{","," "}]],"\[CHacek]o"," ","znamen\[AAcute]",StyleBox[RowBox[{","," "}]],"\[ZHacek]e"," ","\[CHacek]\[IAcute]m"," ","viac"," ","\[SHacek]tvorcov",StyleBox[
+RowBox[{","," "}]],"t\[YAcute]m"," ","je"," ","plocha"," ","samozrejme"," ","presnej\[SHacek]ia",StyleBox[
+RowBox[{"."," "}]],"To"," ","je"," ","mo\[ZHacek]n\[EAcute]"," ","si"," ","aj"," ","vysk\[UAcute]\[SHacek]a\[THacek]"," ","pomocou"," ","samostatn\[YAcute]ch"," ","sliderov"," ","pre"," ","u"," ","a"," ","v",".","\n","\n",StyleBox[
+"bezierPatch",FontSlant -> Italic]," ","najprv"," ","vytvor\[IAcute]"," ","krivku"," ","v"," ","jednom"," ","smere"," ","a"," ","n\[AAcute]sledne"," ","interpoluje"," ","bod"," ","krivky"," ","kolmej"," ","na"," ","\[NHacek]u"," ","pod\:013ea"," ","kroku"," ",StyleBox[
+"v",FontSlant -> Italic],StyleBox[RowBox[{"."," "}]],"Ka\[ZHacek]d\[YAcute]"," ","bod"," ","je"," ","ulo\[ZHacek]en\[YAcute]"," ","do"," ","zoznamu",StyleBox[
+RowBox[{","," "}]],"pod\:013ea"," ","ktor\[EAcute]ho"," ","je"," ","n\[AAcute]sledne"," ","vykreslen\[AAcute]"," ","vygenerovan\[AAcute]"," ","plocha","."}],
+"Text",ExpressionUUID -> "679133e2-90d3-468d-a7e3-cf112094cf09"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{RowBox[{"controlPoints3D","="," ",RowBox[{"{","\n",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"{",RowBox[{RowBox[{"-","1"}],","," ","1",","," ","0"}],"}"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"-","0.5"}],",","1",",","0"}],"}"}],",",RowBox[{"{",RowBox[{"0.5",","," ","1",","," ","0"}],"}"}],","," ",RowBox[
+{"{",RowBox[{"1",",","1",",",RowBox[{"-","1"}]}],"}"}]}],"}"}],",","\n",RowBox[{"{",RowBox[
+{RowBox[{"{",RowBox[{RowBox[{"-","1"}],","," ","0.5",","," ","0"}],"}"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"-","0.5"}],",","0.5",",","1"}],"}"}],",",RowBox[{"{",RowBox[
+{"0.5",","," ","0.5",","," ",RowBox[{"-","1"}]}],"}"}],","," ",RowBox[{"{",RowBox[
+{"1",",","0.5",",","0"}],"}"}]}],"}"}],",","\n",RowBox[{"{",RowBox[{RowBox[{"{",RowBox[
+{RowBox[{"-","1"}],","," ",RowBox[{"-","0.5"}],","," ","0"}],"}"}],","," ",RowBox[
+{"{",RowBox[{RowBox[{"-","0.5"}],",","0.5",",","1"}],"}"}],",",RowBox[{"{",RowBox[
+{"0.5",","," ",RowBox[{"-","0.5"}],","," ",RowBox[{"-","1"}]}],"}"}],","," ",RowBox[
+{"{",RowBox[{"1",",",RowBox[{"-","0.5"}],",","0"}],"}"}]}],"}"}],",","\n",RowBox[
+{"{",RowBox[{RowBox[{"{",RowBox[{RowBox[{"-","1"}],","," ",RowBox[{"-","1"}],","," ",RowBox[
+{"-","1"}]}],"}"}],","," ",RowBox[{"{",RowBox[{RowBox[{"-","0.5"}],",",RowBox[{"-","1"}],",","0"}],"}"}],",",RowBox[
+{"{",RowBox[{"0.5",","," ",RowBox[{"-","1"}],","," ","0"}],"}"}],","," ",RowBox[{"{",RowBox[
+{"1",",",RowBox[{"-","1"}],",","0"}],"}"}]}],"}"}]}],"\n","}"}]}],";"}],RowBox[{"\n","\n"}],RowBox[
+{RowBox[{"(*",RowBox[{RowBox[{"Interpola\[CHacek]n\[AAcute]"," ","funkcia"," ","s"," ","dodato\[CHacek]n\[YAcute]m"," ","v\[YAcute]po\[CHacek]tom"," ","pre"," ","z"}],"-","s\[UAcute]radnicu"}],"*)"}],"\n",RowBox[
+{RowBox[{"interpolate3D","[",RowBox[{"p0_List",","," ","p1_List",",","t_"}],"]"}],":=",RowBox[
+{"(","\n",RowBox[{RowBox[{"intx","=",RowBox[{RowBox[{"t","*",RowBox[{"p0","[",RowBox[
+{"[","1","]"}],"]"}]}],"+",RowBox[{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*",RowBox[
+{"p1","[",RowBox[{"[","1","]"}],"]"}]}]}]}],";","\n",RowBox[{"inty","=",RowBox[{RowBox[
+{"t","*",RowBox[{"p0","[",RowBox[{"[","2","]"}],"]"}]}],"+",RowBox[{RowBox[{"(",RowBox[
+{"1","-","t"}],")"}],"*",RowBox[{"p1","[",RowBox[{"[","2","]"}],"]"}]}]}]}],";","\n",RowBox[
+{"intz","=",RowBox[{RowBox[{"t","*",RowBox[{"p0","[",RowBox[{"[","3","]"}],"]"}]}],"+",RowBox[
+{RowBox[{"(",RowBox[{"1","-","t"}],")"}],"*",RowBox[{"p1","[",RowBox[{"[","3","]"}],"]"}]}]}]}],";","\n",RowBox[
+{"{",RowBox[{"intx",",","inty",","," ","intz"}],"}"}]}],")"}]}]}],RowBox[{"\n","\n"}],RowBox[
+{RowBox[{"bezierPoint3D","[",RowBox[{"p0_List",",","p1_List",",","p2_List",",","p3_List",",","t_"}],"]"}],":=",RowBox[
+{"(","\n",RowBox[{RowBox[{"lin1","=",RowBox[{"interpolate3D","[",RowBox[{"p0",",","p1",",","t"}],"]"}]}],";","\n",RowBox[
+{"lin2","=",RowBox[{"interpolate3D","[",RowBox[{"p1",",","p2",",","t"}],"]"}]}],";","\n",RowBox[
+{"lin3","=",RowBox[{"interpolate3D","[",RowBox[{"p2",",","p3",",","t"}],"]"}]}],";","\n","\n",RowBox[
+{"quad1","=",RowBox[{"interpolate3D","[",RowBox[{"lin1",",","lin2",",","t"}],"]"}]}],";","\n",RowBox[
+{"quad2","=",RowBox[{"interpolate3D","[",RowBox[{"lin2",",","lin3",",","t"}],"]"}]}],";","\n","\n",RowBox[
+{"cub1","=",RowBox[{"interpolate3D","[",RowBox[{"quad1",",","quad2",",","t"}],"]"}]}],";","\n","cub1"}],")"}]}],RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"(*",RowBox[{"V\[YAcute]po\[CHacek]et"," ","B\[EAcute]zierovej"," ","plochy"," ","pre"," ","zadan\[EAcute]"," ","kontroln\[EAcute]"," ","body"}],"*)"}],"\n",RowBox[
+{RowBox[{"bezierPatch3D","[",RowBox[{"imax_",",","jmax_"}],"]"}],":=",RowBox[{"(","\n",RowBox[
+{RowBox[{"vert","=",RowBox[{"{","}"}]}],";","\n",RowBox[{"For","[",RowBox[{RowBox[
+{"i","=","0"}],",",RowBox[{"i","<","imax"}],",",RowBox[{RowBox[{RowBox[{"i","++"}],"\n",RowBox[
+{"For","[",RowBox[{RowBox[{"j","=","0"}],",",RowBox[{"j","<","jmax"}],",",RowBox[
+{"j","++"}],",","\n",RowBox[{"(*",RowBox[{RowBox[{"Predelenie"," ","krokov"," ","celkov\[YAcute]m"," ","po\[CHacek]tom"}],","," ",RowBox[
+{"rovnako"," ","ako"," ","pri"," ","t"}]}],"*)"}],"\n",RowBox[{RowBox[{"u","=",RowBox[
+{"i","/","imax"}]}],";","\n",RowBox[{"v","=",RowBox[{"j","/","jmax"}]}],";","\n","\n",RowBox[
+{"(*",RowBox[{"V\[YAcute]po\[CHacek]et"," ","kriviek"," ","pre"," ","ka\[ZHacek]d\[YAcute]"," ","rad"," ","kontroln\[YAcute]ch"," ","bodov"}],"*)"}],"\n",RowBox[
+{"pointsU","=",RowBox[{"{",RowBox[{RowBox[{"bezierPoint3D","[",RowBox[{RowBox[{"controlPoints3D","[",RowBox[
+{"[",RowBox[{"1",",","1"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[
+{"1",",","2"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[{"1",",","3"}],"]"}],"]"}],",",RowBox[
+{"controlPoints3D","[",RowBox[{"[",RowBox[{"1",",","4"}],"]"}],"]"}],","," ","u"}],"]"}],",","\n",RowBox[
+{"bezierPoint3D","[",RowBox[{RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[{"2",",","1"}],"]"}],"]"}],",",RowBox[
+{"controlPoints3D","[",RowBox[{"[",RowBox[{"2",",","2"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[
+{"[",RowBox[{"2",",","3"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[
+{"2",",","4"}],"]"}],"]"}],","," ","u"}],"]"}],",","\n",RowBox[{"bezierPoint3D","[",RowBox[
+{RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[{"3",",","1"}],"]"}],"]"}],",",RowBox[
+{"controlPoints3D","[",RowBox[{"[",RowBox[{"3",",","2"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[
+{"[",RowBox[{"3",",","3"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[
+{"3",",","4"}],"]"}],"]"}],","," ","u"}],"]"}],",","\n",RowBox[{"bezierPoint3D","[",RowBox[
+{RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[{"4",",","1"}],"]"}],"]"}],",",RowBox[
+{"controlPoints3D","[",RowBox[{"[",RowBox[{"4",",","2"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[
+{"[",RowBox[{"4",",","3"}],"]"}],"]"}],",",RowBox[{"controlPoints3D","[",RowBox[{"[",RowBox[
+{"4",",","4"}],"]"}],"]"}],","," ","u"}],"]"}]}],"}"}]}],";","\n","\n",RowBox[{"(*",RowBox[
+{"V\[YAcute]po\[CHacek]et"," ","krivky"," ","kolmej"," ","na"," ","prv\[UAcute]"}],"*)"}],"\n",RowBox[
+{"pointV","=",RowBox[{"bezierPoint3D","[",RowBox[{RowBox[{"pointsU","[",RowBox[{"[","1","]"}],"]"}],",",RowBox[
+{"pointsU","[",RowBox[{"[","2","]"}],"]"}],",",RowBox[{"pointsU","[",RowBox[{"[","3","]"}],"]"}],",",RowBox[
+{"pointsU","[",RowBox[{"[","4","]"}],"]"}],","," ","v"}],"]"}]}],";","\n","\n",RowBox[
+{"(*",RowBox[{"Ulo\[ZHacek]enie"," ","vypo\[CHacek]\[IAcute]tan\[YAcute]ch"," ","s\[UAcute]radn\[IAcute]c"," ","kriviek"}],"*)"}],"\n",RowBox[
+{"AppendTo","[",RowBox[{"vert",",","pointV"}],"]"}],";"}]}],"\n","]"}]}],";"}]}],"]"}],";","\n","vert"}],")"}]}]}],RowBox[
+{"\n","\n"}],RowBox[{RowBox[{"(*",RowBox[{"Mo\[ZHacek]nos\[THacek]"," ","nastavi\[THacek]"," ","po\[CHacek]et"," ","\[SHacek]tvorcov"}],"*)"}],"\n",RowBox[
+{"Manipulate","[","\n",RowBox[{RowBox[{"ListPlot3D","[",RowBox[{RowBox[{"bezierPatch3D","[",RowBox[
+{"u",",","v"}],"]"}],","," ",RowBox[{"Mesh","\[Rule]","All"}]}],"]"}],",","\n",RowBox[
+{"{",RowBox[{"u",",","5",",","100",",","1",",",RowBox[{"Appearance"," ","\[Rule]"," ","\"Labeled\""}]}],"}"}],",","\n",RowBox[
+{"{",RowBox[{"v",",","5",",","100",",","1",",",RowBox[{"Appearance"," ","\[Rule]"," ","\"Labeled\""}]}],"}"}]}],"\n","]"}]}]}],
+"Input",CellLabel -> "In[6]:= ",ExpressionUUID -> "f24dc750-98f5-4f04-9dff-40b3b56d607c"],Cell[
+BoxData[
+TagBox[StyleBox[DynamicModuleBox[{Set[u$$,22],Set[v$$,22],Set[Typeset`show$$,True],Set[
+Typeset`bookmarkList$$,{}],Set[Typeset`bookmarkMode$$,"Menu"],Typeset`animator$$,Set[
+Typeset`animvar$$,1],Set[Typeset`name$$,"\"untitled\""],Set[Typeset`specs$$,{{Hold[
+u$$],5,100,1},{Hold[v$$],5,100,1}}],Set[Typeset`size$$,Automatic],Set[Typeset`update$$,
+0],Set[Typeset`initDone$$,False],Set[Typeset`skipInitDone$$,True]},DynamicBox[Manipulate`ManipulateBoxes[
+1,StandardForm,RuleDelayed["Variables",{Set[u$$,5],Set[v$$,5]}],RuleDelayed["ControllerVariables",
+{}],RuleDelayed["OtherVariables",{Typeset`show$$,Typeset`bookmarkList$$,Typeset`bookmarkMode$$,Typeset`animator$$,Typeset`animvar$$,Typeset`name$$,Typeset`specs$$,Typeset`size$$,Typeset`update$$,Typeset`initDone$$,Typeset`skipInitDone$$}],
+RuleDelayed["Body",ListPlot3D[bezierPatch3D[u$$,v$$],Mesh -> All]],RuleDelayed["Specifications",
+{{u$$,5,100,1,Appearance -> "Labeled"},{v$$,5,100,1,Appearance -> "Labeled"}}],RuleDelayed[
+"Options",{}],RuleDelayed["DefaultOptions",{}]],SingleEvaluation -> True],RuleDelayed[
+DynamicModuleValues,{}],RuleDelayed[Deinitialization,None],RuleDelayed[UntrackedVariables,
+{Typeset`size$$}],SynchronousInitialization -> True,RuleDelayed[UnsavedVariables,
+{Typeset`initDone$$}],RuleDelayed[UndoTrackedVariables,{Typeset`show$$,Typeset`bookmarkMode$$}],
+ExpressionUUID -> "a2072eb6-fe0c-493d-a11a-258ff72420f5"],"Manipulate",Deployed -> True,
+StripOnInput -> False],Manipulate`InterpretManipulate[1]],StandardForm],"Output",
+CellLabel -> "Out[10]= ",ExpressionUUID -> "9291a7be-5653-4483-894b-8c6d6f7fe747"]},
+Open],ExpressionUUID -> "357472cc-f566-4b17-b900-3adf672b8be1"]},Open],ExpressionUUID -> "483f1c57-7b1e-4eac-9c88-2f4a5da60848"]},
+Open],ExpressionUUID -> "b4d84af3-df39-4232-bdd2-eb5806696991"]},StyleDefinitions -> "Default.nb",
+FrontEndVersion -> "13. for Wolfram Cloud 1.61.2 (November 30, 2021)"]

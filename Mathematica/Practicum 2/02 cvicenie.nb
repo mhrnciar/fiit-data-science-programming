@@ -1,0 +1,769 @@
+Notebook[{Cell[
+TextData[{"Cvi\[CHacek]enie"," ","2",StyleBox[RowBox[{" ","-"," "}]],"Podmienen\[YAcute]"," ","pr\[IAcute]kaz"," ","a"," ","cyklus"}],
+"Section",CellChangeTimes -> {{3557596004.103669`,3557596006.3736725`},{3557626462.2579403`,3557626473.8879566`},{3558158280.7843847`,3558158303.714417`},{3558158348.1954794`,3558158350.7454824`},{3558800995.8514953`,3558801010.374016`}},
+ExpressionUUID -> "e3c29886-1cb8-4a7d-95d1-6d305f549b57"],Cell[
+CellGroupData[{Cell[
+
+"\<Podmienen\[YAcute] pr\[IAcute]kaz\>","Section",CellChangeTimes -> {{3.435411976171875`*^9,3.435411987484375`*^9},{3.5588010155440226`*^9,3.5588010195440283`*^9}},
+ExpressionUUID -> "3d7b46fb-fbe4-4b69-a534-384e755e5697"],Cell[
+"\<Z\[AAcute]kladn\[YAcute] pr\[IAcute]kaz m\[AAcute] rovnako ako v ostatn\[YAcute]ch programovac\[IAcute]ch jazykoch blokov\[UAcute] \[SHacek]trukt\[UAcute]ru. Jednotliv\[EAcute] bloky s\[UAcute] oddelen\[EAcute] \[CHacek]iarkou. \>",
+"Text",CellChangeTimes -> {{3.420913891796875`*^9,3.42091391259375`*^9},3.42123072371875`*^9,{3.466702492578125`*^9,3.46670250325`*^9},3.466710236640625`*^9,{3.46682951065625`*^9,3.4668295128125`*^9},3.558801206001794`*^9,3.5588014080005894`*^9},
+ExpressionUUID -> "d20b3133-29f3-4c44-aadc-951115fbd6c8",TextJustification -> 1.`],Cell[
+TextData[
+{"\nV\[NonBreakingSpace]najjednoduch\[SHacek]ej verzii m\[AAcute] pr\[IAcute]kaz ",StyleBox[
+"If ",FontWeight -> "Bold"],"\[SHacek]trukt\[UAcute]ru tvoren\[UAcute] dvomi blokmi. Bloky s\[UAcute] v\[NonBreakingSpace]tomto pr\[IAcute]pade: testovacia podmienka, blok True.\n\t\n\t",StyleBox[
+"If [ podmienka, \n\t\t\[CHacek]o robi","Code"],"\[THacek]",StyleBox[" ak je podmienka splnen\[AAcute]]\n\t\t",
+"Code"],"\nV\[NonBreakingSpace]z\[AAcute]kladnej verzii m\[AAcute] pr\[IAcute]kaz ",StyleBox[
+"If ",FontWeight -> "Bold"],"\[SHacek]trukt\[UAcute]ru tvoren\[UAcute] tromi blokmi. Bloky s\[UAcute] v\[NonBreakingSpace]tomto pr\[IAcute]pade: testovacia podmienka, blok True, blok False\n\t\n\t",StyleBox[
+"If [ podmienka, \n\t\t\[CHacek]o robi","Code"],"\[THacek]",StyleBox[" ak podmienka je splnen\[AAcute] ",
+"Code"],StyleBox[",","Code",FontColor -> RGBColor[1,0.5`,0]],StyleBox[" \n\t\t\[CHacek]o robi",
+"Code"],"\[THacek]",StyleBox[" ak podmienka nie je splnen\[AAcute]]","Code"]}],"Text",
+CellChangeTimes -> {{3.420913891796875`*^9,3.42091391259375`*^9},3.42123072371875`*^9,{3.466702492578125`*^9,3.46670250325`*^9},3.466710236640625`*^9,{3.46682951065625`*^9,3.4668295128125`*^9},3.558801206001794`*^9,{3.5588014080005894`*^9,3.558801484108196`*^9},{3.593768526557353`*^9,3.593768526587353`*^9},3.652690540928485`*^9},
+ExpressionUUID -> "da45207a-ddf4-4f50-a104-5cda04761810",TextJustification -> 1.`],Cell[
+TextData[
+{StyleBox["Mathematica",FontSlant -> "Italic"]," na rozdiel od ostatn\[YAcute]ch programovac\[IAcute]ch jazykov, umo\[ZHacek]\[NHacek]uje aj tzv. roz\[SHacek]\[IAcute]ren\[UAcute] syntax podmienen\[EAcute]ho pr\[IAcute]kazu  ",StyleBox[
+"If ",FontWeight -> "Bold"],"- teda programov\[UAcute] \[SHacek]trukt\[UAcute]ru, ktor\[AAcute] je tvoren\[AAcute] \[SHacek]tyrmi blokmi.\n\t\n\t",StyleBox[
+"If [ podmienka, \n\t\t\[CHacek]o robi","Code"],"\[THacek]",StyleBox[" ak podmienka je splnen\[AAcute] ",
+"Code"],StyleBox[",","Code",FontColor -> RGBColor[1,0.5`,0]],StyleBox[" \n\t\t\[CHacek]o robi",
+"Code"],"\[THacek]",StyleBox[" ak podmienka nie je splnen\[AAcute] ","Code"],StyleBox[
+",","Code",FontColor -> RGBColor[1,0.5`,0]],StyleBox["\n\t\t\[CHacek]o robi","Code"],"\[THacek]",StyleBox[
+" ako nedok\[AAcute]","Code"],"\[ZHacek]",StyleBox["em podmienku vyhodnoti","Code"],"\[THacek]",StyleBox[
+"]","Code"],"\n\nAk nevie rozhodn\[UAcute]\[THacek], \[CHacek]i je podmienka splnen\[AAcute], tak poskytne ako v\[YAcute]sledok tret\[IAcute] blok."}],
+"Text",CellTags -> "If",CellChangeTimes -> {{3.421230742203125`*^9,3.421230744421875`*^9},{3.421230905703125`*^9,3.42123092859375`*^9},{3.421230989921875`*^9,3.4212309945`*^9},{3.466702583640625`*^9,3.4667025913125`*^9},{3.466702622875`*^9,3.46670265228125`*^9},{3.466829536859375`*^9,3.466829538734375`*^9},{3.5588014954017115`*^9,3.5588014972917147`*^9},{3.59376848140729`*^9,3.59376848143729`*^9},{3.593768526607353`*^9,3.5937685266673536`*^9},3.5937685631074047`*^9,{3.652690546145183`*^9,3.652690549623319`*^9}},
+ExpressionUUID -> "f2655a0c-04ff-4298-97f6-64978765771e",TextJustification -> 1.`],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9}},
+ExpressionUUID -> "93a87658-229a-4e76-b2a7-8af2aafe3295"],Cell[
+TextData[{"Zostavte program, ktor\[YAcute] porovn\[AAcute] dve \[CHacek]\[IAcute]sla ",StyleBox[
+"a, b. ",FontSlant -> "Italic"],"\[CapitalCHacek]\[IAcute]sla ",Cell[
+BoxData[FormBox[
+RowBox[{"a"," "}],TraditionalForm]],ExpressionUUID -> "60d08290-ce46-4256-a96f-7d67cda433a8"],"a",Cell[
+BoxData[
+FormBox[RowBox[{" ","b"}],TraditionalForm]],ExpressionUUID -> "a7cad3c4-cdcd-4033-b549-6d253fbbc160"]," s\[UAcute] zadan\[EAcute] program\[AAcute]torom na za\[CHacek]iatku programu. Ak je \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"a","<","b"," "}],TraditionalForm]],ExpressionUUID -> "32299b39-e9f8-4716-9d1f-001037dac2b9"]," na obrazovku sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["a",TraditionalForm]],ExpressionUUID -> "7c31c2ec-90a1-42b0-a946-701a518e6a6e"]," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["b",TraditionalForm]],ExpressionUUID -> "25525049-4df2-45f6-bf85-116825386a57"],"\".\nFunk\[CHacek]nos\[THacek] programu otestujte tak, ","\[ZHacek]","e over\[IAcute]te funk\[CHacek]nos\[THacek] v\[SHacek]etk\[YAcute]ch jeho vetiev.  "}],
+"Text",CellChangeTimes -> {{3.5575970805321817`*^9,3.557597092192198`*^9},{3.558158414365572`*^9,3.5581584239955854`*^9},{3.5581585036876974`*^9,3.5581585269277296`*^9},{3.558158704789979`*^9,3.5581587400020285`*^9},{3.558801289557421`*^9,3.558801390685565`*^9},{3.558801603629371`*^9,3.558801603689371`*^9},{3.5588017552585845`*^9,3.5588017790336175`*^9},{3.593768434887225`*^9,3.593768434917225`*^9},3.59376848146729`*^9},
+ExpressionUUID -> "41b37b86-c3de-42e4-8657-cfb356928a15"],Cell[
+CellGroupData[{Cell[
+BoxData[
+{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[{RowBox[
+{"a","=","2"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9}},
+CellLabel -> "In[1]:= ",ExpressionUUID -> "c5a81699-31ad-4104-a439-dfe60f87ab26"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","5"}],
+SequenceForm["\[CapitalCHacek]\[IAcute]slo ",2," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",
+5],Editable -> False],StandardForm],"Print",ExpressionUUID -> "aa551584-5d54-4033-9d0d-4eac627991b8"]},
+Open],ExpressionUUID -> "d3eb408e-4ac6-41ae-be2e-8791941228a4"]},Open],ExpressionUUID -> "c805d0a5-807f-4992-9631-7a13d837bbb6"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9}},
+ExpressionUUID -> "cc77ce23-d7ed-478a-b1bd-db7994b83b38"],Cell[
+TextData[{"Zostavte program, ktor\[YAcute] porovn\[AAcute] dve \[CHacek]\[IAcute]sla ",StyleBox[
+"a, b. ",FontSlant -> "Italic"],"\[CapitalCHacek]\[IAcute]sla ",Cell[
+BoxData[FormBox[
+RowBox[{"a"," "}],TraditionalForm]],ExpressionUUID -> "c73a3e09-59fc-4b74-acbe-6915afae5cd0"],"a",Cell[
+BoxData[
+FormBox[RowBox[{" ","b"}],TraditionalForm]],ExpressionUUID -> "0d0a05cc-a9b8-4205-b187-730968d22a64"]," s\[UAcute] zadan\[EAcute] program\[AAcute]torom na za\[CHacek]iatku programu - predpoklad\[AAcute]me zadanie r\[OHat]znych \[CHacek]\[IAcute]sel. Ak je \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"a","<","b"," "}],TraditionalForm]],ExpressionUUID -> "d2123838-f078-4b7f-8a96-5d4a9adf2c7e"]," na obrazovku sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["a",TraditionalForm]],ExpressionUUID -> "79dd3b0b-f342-4049-b938-1061270c9527"]," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["b",TraditionalForm]],ExpressionUUID -> "52009c38-03bc-4b15-a9c7-72424bcfa7f4"],"\". V opa\[CHacek]nom pr\[IAcute]pade sa na obrazovku vyp\[IAcute]\[SHacek]e spr\[AAcute]va  \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["b",TraditionalForm]],ExpressionUUID -> "fd0c9611-b2bf-45cc-a28a-789640a027bb"]," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["a",TraditionalForm]],ExpressionUUID -> "717f6955-1e65-44d1-a6a8-effd5ad4034f"],"\".\nFunk\[CHacek]nos\[THacek] programu otestujte tak, \[ZHacek]e over\[IAcute]te funk\[CHacek]nos\[THacek] v\[SHacek]etk\[YAcute]ch jeho vetiev."}],
+"Text",CellChangeTimes -> {{3.5575970805321817`*^9,3.557597092192198`*^9},{3.558158414365572`*^9,3.5581584239955854`*^9},{3.5581585036876974`*^9,3.5581585269277296`*^9},{3.558158704789979`*^9,3.5581587400020285`*^9},{3.558801289557421`*^9,3.558801390685565`*^9},{3.5588015754968243`*^9,3.5588016075493765`*^9},{3.5588017838336244`*^9,3.5588017842336245`*^9},{3.593768434947225`*^9,3.5937684349772253`*^9},3.59376848149729`*^9,{3.652690620436185`*^9,3.6526906473484297`*^9}},
+ExpressionUUID -> "be7d4e2f-2c36-437a-9489-8b4b61aa5e5a"],Cell[
+CellGroupData[{Cell[
+BoxData[
+{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[{RowBox[
+{"a","=","2"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","b",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","a"}],"]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9},{3.558801613438885`*^9,3.558801619071393`*^9},{3.652690585064274`*^9,3.6526906054777384`*^9}},
+CellLabel -> "In[5]:= ",ExpressionUUID -> "2ba4cdbc-919b-43c8-8ad1-db81110656b0"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","5"}],
+SequenceForm["\[CapitalCHacek]\[IAcute]slo ",2," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",
+5],Editable -> False],StandardForm],"Print",ExpressionUUID -> "83993083-4cc5-44d5-827c-28729063a387"]},
+Open],ExpressionUUID -> "58fa91d0-a53c-4bac-ba3a-1b09305ce776"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","12"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","b",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","a"}],"]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9},{3.558801613438885`*^9,3.558801627096404`*^9}},
+CellLabel -> "In[9]:= ",ExpressionUUID -> "b624cb1b-e7f5-406b-b86d-b6651ba7075b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","12"}],
+SequenceForm["\[CapitalCHacek]\[IAcute]slo ",5," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",
+12],Editable -> False],StandardForm],"Print",ExpressionUUID -> "613e0bba-aae6-4e48-be60-215763e9318e"]},
+Open],ExpressionUUID -> "82513792-e991-4f11-8af5-fe3bc87376fe"]},Open],ExpressionUUID -> "3e6c8eb1-7f7c-43c1-8d83-e18284d22cae"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9}},
+ExpressionUUID -> "76bdbc4b-879f-4443-abf7-b79eb7f40745"],Cell[
+TextData[{"Zostavte program, ktor\[YAcute] porovn\[AAcute] dve \[CHacek]\[IAcute]sla ",StyleBox[
+"a, b. ",FontSlant -> "Italic"],"\[CapitalCHacek]\[IAcute]sla ",Cell[
+BoxData[FormBox[
+RowBox[{"a"," "}],TraditionalForm]],ExpressionUUID -> "73415bd3-62c7-4fe7-9fca-5fbf8e578acf"],"a",Cell[
+BoxData[
+FormBox[RowBox[{" ","b"}],TraditionalForm]],ExpressionUUID -> "51740e7e-d90e-436a-a791-650a74ddd09f"]," s\[UAcute] zadan\[EAcute] program\[AAcute]torom na za\[CHacek]iatku programu. Ak je \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"a","<","b"," "}],TraditionalForm]],ExpressionUUID -> "d865f8d5-0e39-4015-895f-0e204176d94e"]," na obrazovku sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["a",TraditionalForm]],ExpressionUUID -> "8da92fa5-5a74-45d7-9583-9488be2eb417"]," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["b",TraditionalForm]],ExpressionUUID -> "337a0d58-4a03-411b-ae70-a173fe38cd39"],"\". V opa\[CHacek]nom pr\[IAcute]pade sa na obrazovku vyp\[IAcute]\[SHacek]e spr\[AAcute]va  \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["b",TraditionalForm]],ExpressionUUID -> "3cec5dac-fac1-4e2a-9f25-48f597fc6970"]," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["a",TraditionalForm]],ExpressionUUID -> "ea2682b6-6dff-4d59-b76f-bd43e1efffa5"],"\". V pr\[IAcute]pade, \[ZHacek]e program nevie rozhodn\[UAcute]\[THacek], ktor\[EAcute] z t\[YAcute]chto dvoch tvrden\[IAcute] je pravdiv\[EAcute], vyp\[IAcute]\[SHacek]e o tom spr\[AAcute]vu na obrazovku.\nFunk\[CHacek]nos\[THacek] programu otestujte tak, ","\[ZHacek]","e over\[IAcute]te funk\[CHacek]nos\[THacek] v\[SHacek]etk\[YAcute]ch jeho vetiev."}],
+"Text",CellChangeTimes -> {{3.5575970805321817`*^9,3.557597092192198`*^9},{3.558158414365572`*^9,3.5581584239955854`*^9},{3.5581585036876974`*^9,3.5581585269277296`*^9},{3.558158704789979`*^9,3.5581587400020285`*^9},{3.558801289557421`*^9,3.558801390685565`*^9},{3.5588015754968243`*^9,3.5588016075493765`*^9},{3.5588016664289594`*^9,3.5588017040690126`*^9},{3.558801787073629`*^9,3.5588017876936297`*^9},{3.593768435057225`*^9,3.5937684351072254`*^9},{3.5937684815272903`*^9,3.59376848155729`*^9}},
+ExpressionUUID -> "da2e3f3f-e137-4d98-8b88-476aa307ff7e"],Cell[
+CellGroupData[{Cell[
+BoxData[
+{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[{RowBox[
+{"a","=","2"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","b",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","a"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[","\"Neviem rozhodn\[UAcute]\[THacek] o pravdivosti tvrdenia\"","]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9},{3.558801613438885`*^9,3.558801619071393`*^9},{3.5588017074790173`*^9,3.558801731248551`*^9},3.593768435137225`*^9},
+CellLabel -> "In[13]:= ",ExpressionUUID -> "0a043b48-01a9-444d-a752-1b5b44b2bb4b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"","\[InvisibleSpace]","2","\[InvisibleSpace]","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","5"}],
+SequenceForm["\[CapitalCHacek]\[IAcute]slo ",2," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",
+5],Editable -> False],StandardForm],"Print",ExpressionUUID -> "ef28c6f1-eb49-4669-821b-9d34379070e6"]},
+Open],ExpressionUUID -> "25b51b4d-4d4b-4b49-a873-ca6e141b3863"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","12"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","b",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","a"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[","\"Neviem rozhodn\[UAcute]\[THacek] o pravdivosti tvrdenia\"","]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9},{3.558801613438885`*^9,3.558801619071393`*^9},{3.5588017074790173`*^9,3.558801737128559`*^9},3.593768435167225`*^9},
+CellLabel -> "In[17]:= ",ExpressionUUID -> "37a13dc4-e5ad-451d-ac57-ff7f8a7b16f5"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","12"}],
+SequenceForm["\[CapitalCHacek]\[IAcute]slo ",5," je men\[SHacek]ie ako \[CHacek]\[IAcute]slo ",
+12],Editable -> False],StandardForm],"Print",ExpressionUUID -> "6c34f616-334d-446a-a1e3-fea09900cc46"]},
+Open],ExpressionUUID -> "a851f858-c8f9-4c8e-9179-37045ff6cd51"],Cell[
+CellGroupData[
+{Cell[
+BoxData[{RowBox[{"Clear","[",RowBox[{"a",",","b"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=",RowBox[{"12","+",RowBox[{"2","I"}]}]}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"b","=","5"}],";"}],"\[IndentingNewLine]",RowBox[{"If","[",RowBox[{RowBox[
+{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","a",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","b"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"\[CapitalCHacek]\[IAcute]slo \"",","," ","b",","," ","\" je men\[SHacek]ie ako \[CHacek]\[IAcute]slo \"",","," ","a"}],"]"}],",","\[IndentingNewLine]",RowBox[
+{"Print","[","\"Neviem rozhodn\[UAcute]\[THacek] o pravdivosti tvrdenia\"","]"}]}],"\[IndentingNewLine]","     ","]"}]}],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.43546902837925`*^9,3.43546904019175`*^9},{3.4359977303475`*^9,3.43599801766`*^9},3.435998189019375`*^9,{3.467222867234375`*^9,3.467222900375`*^9},{3.46722311003125`*^9,3.467223111171875`*^9},{3.558801516151741`*^9,3.558801554796795`*^9},{3.558801613438885`*^9,3.558801619071393`*^9},{3.5588017074790173`*^9,3.558801743438568`*^9},3.5937684351972256`*^9},
+CellLabel -> "In[21]:= ",ExpressionUUID -> "6b9a25be-ce6e-444e-84c0-fb3137f71ef9"],Cell[
+BoxData[
+TemplateBox[{"Less","nord","\"Invalid comparison with \\!\\(\\*TagBox[RowBox[{\\\"12\\\", \\\"+\\\", RowBox[{\\\"2\\\", \\\" \\\", \\\"\[ImaginaryI]\\\"}]}], Short[#1, 5] & ]\\) attempted.\"",2,24,1,31386440974547398929,"Local"},
+"MessageTemplate"],StandardForm],"Message","MSG",ExpressionUUID -> "d897c680-f2fd-4b9a-92a2-a5eb1d6c63b2"],Cell[
+BoxData[
+"\"Neviem rozhodn\[UAcute]\[THacek] o pravdivosti tvrdenia\"",StandardForm],"Print",
+ExpressionUUID -> "f8ece3ee-a95c-40c7-87d5-97f2c5b9f0de"]},Open],ExpressionUUID -> "7b43ec6f-d3b6-4743-856f-4d4ec0fd613c"]},
+Open],ExpressionUUID -> "85b53463-f67c-4164-97e2-c32b3e0c6ee7"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9},3.593768816265786`*^9},
+ExpressionUUID -> "68f371df-0d04-4fc7-8e7b-f0e99719efe1"],Cell[
+TextData[{"Zostavte program, ktor\[YAcute] testuje, \[CHacek]i \:013eubovoln\[EAcute] re\[AAcute]lne \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"c"," "}],TraditionalForm]],ExpressionUUID -> "eadff943-af59-448c-851d-cdc722fef2f4"],"patr\[IAcute] do intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "c43c31af-c1ae-471f-891e-e52e098defa3"],", kde ",Cell[
+BoxData[
+FormBox[RowBox[{"a",","," ","b"," "}],TraditionalForm]],ExpressionUUID -> "c6952380-762a-4dd9-954e-8d932178e5a2"]," s\[UAcute]  \:013eubovoln\[EAcute]  re\[AAcute]lne \[CHacek]\[IAcute]sla tak\[EAcute], \[ZHacek]e interval ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "5dc70142-997f-48af-a2a6-845f6473745e"]," m\[AAcute] zmysel.",StyleBox[
+" ",FontSlant -> "Italic"],"\[CapitalCHacek]\[IAcute]sla ",Cell[
+BoxData[FormBox[
+RowBox[{"a",","," ","b"," "}],TraditionalForm]],ExpressionUUID -> "a7e35620-a8b1-4fd2-b951-37c69c239e8e"],"a",Cell[
+BoxData[
+FormBox[RowBox[{" ","c"}],TraditionalForm]],ExpressionUUID -> "284f09cc-4d9e-4790-ae71-7c754b658c56"]," s\[UAcute] zadan\[EAcute] program\[AAcute]torom na za\[CHacek]iatku programu. Ak je \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"c","\[Element]",RowBox[{"(",RowBox[{"a",","," ","b"}],")"}]}],TraditionalForm]],
+ExpressionUUID -> "039b4ab1-ab4c-4b89-b62a-20105afa3de1"]," na obrazovku sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["c",TraditionalForm]],ExpressionUUID -> "17c539f9-5605-499f-9552-34eb5d2bf07d"]," je z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "1cda707e-2c25-4960-b5b1-ccabf5526ced"],"\". V opa\[CHacek]nom pr\[IAcute]pade sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va  \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["c",TraditionalForm]],ExpressionUUID -> "4c5b8389-7601-45c2-937e-62d6500b91e8"]," nie je z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "e3181865-9223-40f2-b8e0-b5d5ec9a9c98"],"\".\nFunk\[CHacek]nos\[THacek] programu otestujte tak, ","\[ZHacek]","e over\[IAcute]te funk\[CHacek]nos\[THacek] v\[SHacek]etk\[YAcute]ch jeho vetiev.  "}],
+"Text",CellChangeTimes -> {{3.5575970805321817`*^9,3.557597092192198`*^9},{3.558158414365572`*^9,3.5581584239955854`*^9},{3.5581585036876974`*^9,3.5581585269277296`*^9},{3.558158704789979`*^9,3.5581587400020285`*^9},{3.558801289557421`*^9,3.558801390685565`*^9},{3.558801603629371`*^9,3.558801603689371`*^9},{3.5588017552585845`*^9,3.5588017790336175`*^9},{3.5588018357631974`*^9,3.558801874872753`*^9},{3.558801908495307`*^9,3.558801946299861`*^9},{3.558802019354463`*^9,3.5588020445214987`*^9},3.5588034900866127`*^9,{3.5937684352772255`*^9,3.593768435297226`*^9},{3.5937684815872903`*^9,3.5937684816172905`*^9},3.593768816265786`*^9},
+ExpressionUUID -> "f14c0b59-691d-4a6b-8fea-d2c05509f985"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"\[IndentingNewLine]",RowBox[{RowBox[{"Clear","[",RowBox[{"a",",","b",",","c"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","4"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","6"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"c","=","5"}],";"}],"\[IndentingNewLine]",RowBox[{"If","[",RowBox[{RowBox[
+{"a","<","c"," ","<","b"}],",","\[IndentingNewLine]","\t",RowBox[{"Print","[",RowBox[
+{"\"\[CHacek]\[IAcute]slo \"",","," ","c",",","\" je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"\"\[CHacek]\[IAcute]slo \"",","," ","c",",","\" nie je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}]}],"\[IndentingNewLine]","\t","]"}]}]}]],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.435412441703125`*^9,3.435412468203125`*^9},{3.43546904556675`*^9,3.4354690559105`*^9},{3.43599808166`*^9,3.43599809081625`*^9},{3.435998141550625`*^9,3.435998301394375`*^9},{3.43599837000375`*^9,3.43599837031625`*^9},{3.467222976203125`*^9,3.4672230311875`*^9},{3.467223100875`*^9,3.4672231071875`*^9},{3.558801989544421`*^9,3.5588020033144407`*^9},3.593768816265786`*^9},
+CellLabel -> "In[25]:= ",ExpressionUUID -> "a3c430d2-2a06-4ce9-a2c0-5ece66cf9455"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","5","\[InvisibleSpace]","\" je z intervalu (\"","\[InvisibleSpace]","4","\[InvisibleSpace]","\",\"","\[InvisibleSpace]","6","\[InvisibleSpace]","\")\""}],
+SequenceForm["\[CHacek]\[IAcute]slo ",5," je z intervalu (",4,",",6,")"],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "0d060797-520f-4616-a67b-1c20ead5c961"]},
+Open],ExpressionUUID -> "e556b122-0e2e-4bdd-87f6-b5bd7b58bf48"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"\[IndentingNewLine]",RowBox[{RowBox[{"Clear","[",RowBox[{"a",",","b",",","c"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","4"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","6"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"c","=","15"}],";"}],"\[IndentingNewLine]",RowBox[{"If","[",RowBox[{RowBox[
+{"a","<","c"," ","<","b"}],",","\[IndentingNewLine]","\t",RowBox[{"Print","[",RowBox[
+{"\"\[CHacek]\[IAcute]slo \"",","," ","c",",","\" je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"\"\[CHacek]\[IAcute]slo \"",","," ","c",",","\" nie je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}]}],"\[IndentingNewLine]","\t","]"}]}]}]],
+"Input",CellTags -> "If",CellChangeTimes -> {{3.435412118765625`*^9,3.435412238234375`*^9},{3.435412441703125`*^9,3.435412468203125`*^9},{3.43546904556675`*^9,3.4354690559105`*^9},{3.43599808166`*^9,3.43599809081625`*^9},{3.435998141550625`*^9,3.435998301394375`*^9},{3.43599837000375`*^9,3.43599837031625`*^9},{3.467222976203125`*^9,3.4672230311875`*^9},{3.467223100875`*^9,3.4672231071875`*^9},{3.5588019767919035`*^9,3.5588020116744523`*^9},3.593768816265786`*^9},
+CellLabel -> "In[30]:= ",ExpressionUUID -> "72904572-f3a9-4bae-b739-9b82cb0508ba"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"\[CHacek]\[IAcute]slo \"","\[InvisibleSpace]","15","\[InvisibleSpace]","\" nie je z intervalu (\"","\[InvisibleSpace]","4","\[InvisibleSpace]","\",\"","\[InvisibleSpace]","6","\[InvisibleSpace]","\")\""}],
+SequenceForm["\[CHacek]\[IAcute]slo ",15," nie je z intervalu (",4,",",6,")"],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "5dc3d274-a0aa-4a8d-be17-7d88b595bb9d"]},
+Open],ExpressionUUID -> "28a5195c-10ae-4326-8b58-5eebed7893e4"]},Open],ExpressionUUID -> "53925640-6548-4aa8-a267-7fe7e0d2865f"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9}},
+ExpressionUUID -> "b11da0f7-c17e-4395-839f-b092a5e8e74a"],Cell[
+TextData[{"Zostavte program, ktor\[YAcute] testuje, \[CHacek]i \:013eubovoln\[EAcute] re\[AAcute]lne \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"c"," "}],TraditionalForm]],ExpressionUUID -> "bf2b6ea8-1148-409d-9538-70bfef699c56"],"patr\[IAcute] do intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "7b0a0713-5b79-4b43-9097-9011fe1e5954"],", kde ",Cell[
+BoxData[
+FormBox[RowBox[{"a",","," ","b"," "}],TraditionalForm]],ExpressionUUID -> "5279f202-c633-4bd2-bcc1-abab5de41e3f"]," s\[UAcute]  \:013eubovoln\[EAcute]  re\[AAcute]lne \[CHacek]\[IAcute]sla tak\[EAcute], \[ZHacek]e interval ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "d8e8a33a-01b3-40ed-ae62-09beea47bd39"]," m\[AAcute] zmysel.",StyleBox[
+" ",FontSlant -> "Italic"],"\[CapitalCHacek]\[IAcute]sla ",Cell[
+BoxData[FormBox[
+RowBox[{"a",","," ","b"," "}],TraditionalForm]],ExpressionUUID -> "795a4ad4-d13d-4b47-99b3-3d218976b6e2"],"a",Cell[
+BoxData[
+FormBox[RowBox[{" ","c"}],TraditionalForm]],ExpressionUUID -> "84cd2574-1083-4ccf-b02d-8faab195da50"]," s\[UAcute] zadan\[EAcute] program\[AAcute]torom na za\[CHacek]iatku programu. Ak je \[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox[RowBox[{"c","\[Element]",RowBox[{"(",RowBox[{"a",","," ","b"}],")"}]}],TraditionalForm]],
+ExpressionUUID -> "5985021e-bfb1-4dd5-a6b2-4e9d13601757"]," na obrazovku sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["c",TraditionalForm]],ExpressionUUID -> "7fb54def-4aa6-41f5-a16d-c503ef12cbe9"]," je z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "0d23cd8e-2f16-44ad-9523-606ac4d5fd36"],"\". V opa\[CHacek]nom pr\[IAcute]pade sa vyp\[IAcute]\[SHacek]e spr\[AAcute]va  \"\[CHacek]\[IAcute]slo ",Cell[
+BoxData[
+FormBox["c",TraditionalForm]],ExpressionUUID -> "efa9ad58-3caa-425d-9c75-c7fa4d12f170"]," nie je z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"(",RowBox[{"a",",","b"}],")"}],TraditionalForm]],ExpressionUUID -> "69e7eba8-2d2d-43e9-b68d-07ab6b11a583"],"\".\nProgram bude z\[AAcute]rove","\[NHacek]"," testova\[THacek], \[CHacek]i je interval spr\[AAcute]vne zadan\[YAcute].\nFunk\[CHacek]nos\[THacek] programu otestujte tak, \[ZHacek]e over\[IAcute]te funk\[CHacek]nos\[THacek] v\[SHacek]etk\[YAcute]ch jeho vetiev.  "}],
+"Text",CellChangeTimes -> {{3.5575970805321817`*^9,3.557597092192198`*^9},{3.558158414365572`*^9,3.5581584239955854`*^9},{3.5581585036876974`*^9,3.5581585269277296`*^9},{3.558158704789979`*^9,3.5581587400020285`*^9},{3.558801289557421`*^9,3.558801390685565`*^9},{3.558801603629371`*^9,3.558801603689371`*^9},{3.5588017552585845`*^9,3.5588017790336175`*^9},{3.5588018357631974`*^9,3.558801874872753`*^9},{3.558801908495307`*^9,3.558801946299861`*^9},{3.558802019354463`*^9,3.5588020445214987`*^9},{3.5588034862866077`*^9,3.5588035399766827`*^9},{3.5937684353872256`*^9,3.5937684354372253`*^9},{3.59376848164729`*^9,3.5937684816672907`*^9},3.5937685631474047`*^9},
+ExpressionUUID -> "5f5f7068-4001-4b07-8484-1454ce1c6d37"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[",RowBox[{"a",",","b",",","c"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","7"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","6"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"c","=","5"}],";"}],"\[IndentingNewLine]",RowBox[{"If","[",RowBox[{RowBox[
+{"a","<","b"}],",","\n",RowBox[{RowBox[{"Print","[","\"Interval je zadan\[YAcute] spr\[AAcute]vne.\"","]"}],";","\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","c"," ","<","b"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"c",",","\" je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"c",",","\" nie je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}]}],"\[IndentingNewLine]","\t","]"}]}],",","\[IndentingNewLine]",RowBox[
+{"Print","[","\"b < a, Interval nie je zadan\[YAcute] spr\[AAcute]vne.\"","]"}]}],"]"}],"\[IndentingNewLine]"}]],
+"Input",CellTags -> "If",CellChangeTimes -> {{3435412543.40625`,3435412656.90625`},{3435425077.703125`,3435425079.859375`},{3435998375.2225`,3435998427.488125`},{3467223122.53125`,3467223154.515625`},{3558803566.9867206`,3558803575.506733`},{3558803928.8832273`,3558803935.3132367`},{3558839633.7617846`,3558839634.9517865`}},
+CellLabel -> "In[1]:= ",ExpressionUUID -> "d9659f1d-1b7e-47db-be38-f885b5d898f2"],Cell[
+BoxData[
+"\"b < a, Interval nie je zadan\[YAcute] spr\[AAcute]vne.\"",StandardForm],"Print",
+ExpressionUUID -> "f1e03648-aed0-488a-b0c8-42d3fc15b535"]},Open],ExpressionUUID -> "9de0ff86-3faf-4759-9625-ede465dd7d66"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{RowBox[{"Clear","[",RowBox[{"a",",","b",",","c"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"a","=","3"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"b","=","6"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"c","=","5"}],";"}],"\[IndentingNewLine]",RowBox[{"If","[",RowBox[{RowBox[
+{"a","<","b"}],",","\[IndentingNewLine]",RowBox[{RowBox[{"Print","[","\"Interval je zadan\[YAcute] spr\[AAcute]vne.\"","]"}],";","\[IndentingNewLine]",RowBox[
+{"If","[",RowBox[{RowBox[{"a","<","c"," ","<","b"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"c",",","\" je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}],",","\[IndentingNewLine]","\t",RowBox[
+{"Print","[",RowBox[{"c",",","\" nie je z intervalu (\"",",","a",",","\",\"",",","b",",","\")\""}],"]"}]}],"\[IndentingNewLine]","\t","]"}]}],",","\n",RowBox[
+{"Print","[","\"b < a, Interval nie je zadan\[YAcute] spr\[AAcute]vne.\"","]"}]}],"]"}],"\[IndentingNewLine]"}]],
+"Input",CellTags -> "If",CellChangeTimes -> {{3435412543.40625`,3435412656.90625`},{3435425077.703125`,3435425079.859375`},{3435998375.2225`,3435998427.488125`},{3467223122.53125`,3467223167.953125`},{3558803911.0932026`,3558803937.1632395`},{3558839629.4217787`,3558839630.69178`}},
+CellLabel -> "In[11]:= ",ExpressionUUID -> "994543aa-773b-4b61-b40e-b241fa54f38f"],Cell[
+BoxData[
+"\"Interval je zadan\[YAcute] spr\[AAcute]vne.\"",StandardForm],"Print",ExpressionUUID -> "9e494f67-5839-4f18-9607-e8865bec1436"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"5","\[InvisibleSpace]","\" je z intervalu (\"","\[InvisibleSpace]","3","\[InvisibleSpace]","\",\"","\[InvisibleSpace]","6","\[InvisibleSpace]","\")\""}],
+SequenceForm[5," je z intervalu (",3,",",6,")"],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "e47e5135-ac7f-4c00-94d3-3183ae0dac18"]},Open],ExpressionUUID -> "9165540c-267a-4a5c-a409-4cad3e455230"]},
+Open],ExpressionUUID -> "c6386eb7-670d-4b6e-8f31-ecae0d93ba21"]},Open],ExpressionUUID -> "72a73a8a-1278-4e38-83de-3d39b7d6419c"],Cell[
+CellGroupData[
+{Cell[
+"\<Cyklus - Do,  s pevn\[YAcute]m aj s variabiln\[YAcute]m po\[CHacek]tom opakovan\[IAcute]\>",
+"Section",CellChangeTimes -> {{3.435411976171875`*^9,3.435411987484375`*^9},{3.5588010155440226`*^9,3.5588010195440283`*^9},{3.558806921347073`*^9,3.558806922487075`*^9},{3.5588069561471214`*^9,3.5588069832071595`*^9}},
+ExpressionUUID -> "b1e9b27e-ac81-43ab-8f18-de16a4391d04"],Cell[
+TextData[{"\nZ\[AAcute]kladn\[AAcute] \[SHacek]trukt\[UAcute]ra pr\[IAcute]kazu cyklu m\[AAcute] tvar:\n \n\t",StyleBox[
+"Do[blok pr\[IAcute]kazov, {List}]","Code"],"\n\nalebo\n\t",StyleBox["Do[\n\t\tpr\[IAcute]kaz1;\n\t\tpr\[IAcute]kaz2;\n\t\tpr\[IAcute]kaz3,    {List}]",
+"Code"],"\n\nBlok pr\[IAcute]kazov rovnako ako v pr\[IAcute]pade podmienen\[EAcute]ho pr\[IAcute]kazu If m\[OHat]\[ZHacek]e by\[THacek] tvoren\[YAcute] jedn\[YAcute]m pr\[IAcute]kazom, alebo nieko\:013ek\[YAcute]mi pr\[IAcute]kazmi oddelen\[YAcute]ch bodko\[CHacek]iarkami. Za posledn\[YAcute]m pr\[IAcute]kazom v bloku bude nasledova\[THacek] \[CHacek]iarka, ktor\[AAcute] hovor\[IAcute], \[ZHacek]e teraz je koniec vykon\[AAcute]vacej \[CHacek]asti cyklu a nasleduje \[CHacek]as\[THacek], v ktorej hovor\[IAcute]me ko\:013eko kr\[AAcute]t a ako sa m\[AAcute] cyklus zopakova\[THacek]. T\[AAcute]to \[CHacek]as\[THacek] m\[OHat]","\[ZHacek]","e ma\[THacek] tvar\n\t\[Bullet] {n} - kr\[AAcute]t sa zopakuj\[UAcute] pr\[IAcute]kazy v tele cyklu, \n\t\[Bullet] {i, n} - riadiaca premenn\[AAcute] i nadob\[UAcute]da hodnoty od 1 do a pod\:013ea toho sa aj cyklus opakuje, \n\t\[Bullet] {i, \[SHacek]tart, koniec} - riadiaca premenn\[AAcute] i nadob\[UAcute]da hodnoty od \[SHacek]tart hodnoty do koniec hodnoty a pod\:013ea toho sa aj cyklus opakuje, \n\t\[Bullet] {i, \[SHacek]tart, koniec, krok} - riadiaca premenn\[AAcute] i nadob\[UAcute]da hodnoty ",StyleBox[
+"od",FontWeight -> "Bold"]," \[SHacek]tartovacej hodnoty ",StyleBox["do",FontWeight -> "Bold"]," koniec hodnoty s krokom krok a pod\:013ea toho sa aj cyklus opakuje"}],
+"Text",CellChangeTimes -> {{3.421230751421875`*^9,3.421230762875`*^9},{3.42123104740625`*^9,3.421231067484375`*^9},{3.42123112240625`*^9,3.421231134015625`*^9},{3.421231198125`*^9,3.421231208515625`*^9},{3.43541279771875`*^9,3.435412808390625`*^9},{3.435412855046875`*^9,3.435412907328125`*^9},{3.435413083859375`*^9,3.435413364125`*^9},{3.43541909009375`*^9,3.435419233375`*^9},{3.43541932278125`*^9,3.4354193246875`*^9},3.43542059`*^9,3.435421213484375`*^9,3.435421256359375`*^9,{3.43542130175`*^9,3.4354213135625`*^9},{3.4360161590846252`*^9,3.4360161646627502`*^9},{3.5588069513771152`*^9,3.5588069546071196`*^9},{3.558806994217175`*^9,3.5588070260082197`*^9},{3.5937684376072288`*^9,3.593768437697229`*^9},{3.593768483847294`*^9,3.593768483887294`*^9}},
+ExpressionUUID -> "1046a363-5d77-49f8-83d5-4acb0befaf58"],Cell[
+CellGroupData[{Cell[
+
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9},{3.558803960533272`*^9,3.5588039660032797`*^9},{3.558804120675496`*^9,3.5588041216854973`*^9},3.5588074049617505`*^9},
+ExpressionUUID -> "c2f6c417-d5bd-4b39-8bd2-798a806fc8c0"],Cell[
+TextData[{"Pomocou cyklu vygeneruj 4 n\[AAcute]hodn\[EAcute] re\[AAcute]lne \[CHacek]\[IAcute]sla z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"[",RowBox[{"0",",","1"}],"]"}],TraditionalForm]],ExpressionUUID -> "32d16ffb-9ee2-4f7f-b6cf-cda2f28320c2"],".\n","Pomocou cyklu vygeneruj 4 n\[AAcute]hodn\[EAcute] re\[AAcute]lne \[CHacek]\[IAcute]sla z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"[",RowBox[{"5",",","10"}],"]"}],TraditionalForm]],ExpressionUUID -> "21ecbbc8-5705-407e-b250-3cc9a5f723e7"],".\nPomocou cyklu vygeneruj 4 n\[AAcute]hodn\[EAcute] cel\[EAcute] \[CHacek]\[IAcute]sla z intervalu ",Cell[
+BoxData[
+FormBox[RowBox[{"[",RowBox[{RowBox[{"-","2"}],",","10"}],"]"}],TraditionalForm]],
+ExpressionUUID -> "35168693-993a-4a2e-8d41-c852fd090794"],"."}],"Text",CellChangeTimes -> {{3.5575971303722515`*^9,3.5575971355422587`*^9},{3.5582014163903866`*^9,3.5582014209103928`*^9},{3.5582030754836173`*^9,3.5582030918536406`*^9},{3.558203141235709`*^9,3.5582031978577895`*^9},{3.5582032461878567`*^9,3.558203257457873`*^9},{3.5582032951379256`*^9,3.5582032959979267`*^9},{3.5582033277899714`*^9,3.558203336819984`*^9},{3.55880439379788`*^9,3.558804512301046`*^9},{3.558804573341131`*^9,3.558804627491207`*^9},{3.558807066808277`*^9,3.5588070836483`*^9}},
+ExpressionUUID -> "9d1c40d1-32c2-4545-accc-192863e16967"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"Do","[",RowBox[{RowBox[{"Print","[",RowBox[{"Random","[","]"}],"]"}],",",RowBox[
+{"{","4","}"}]}],"]"}]],"Input",CellChangeTimes -> {{3.43542144359375`*^9,3.43542147734375`*^9},3.435421600453125`*^9},
+CellLabel -> "In[17]:= ",ExpressionUUID -> "cdcf2e79-980b-4c81-b620-bebadd8dec74"],Cell[
+BoxData[
+"0.8597199586576142`",StandardForm],"Print",ExpressionUUID -> "7b121b07-92d0-4f69-9735-5223a687528f"],Cell[
+BoxData[
+"0.4021020236939911`",StandardForm],"Print",ExpressionUUID -> "b927a5fb-6634-4807-adec-d5510429588f"],Cell[
+BoxData[
+"0.8089527522748252`",StandardForm],"Print",ExpressionUUID -> "78682bc7-d6df-450b-af81-1fd30974d898"],Cell[
+BoxData[
+"0.28831527819889974`",StandardForm],"Print",ExpressionUUID -> "eb5f2649-4ad3-4b03-a8c1-10cfb8a4000a"]},
+Open],ExpressionUUID -> "b0e27287-111e-48c9-a9b7-db0624b744c4"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Do","[",RowBox[{RowBox[{"Print","[",RowBox[{"Random","[",RowBox[
+{"Real",",",RowBox[{"{",RowBox[{"5",",","10"}],"}"}]}],"]"}],"]"}],",",RowBox[{"{","4","}"}]}],"]"}]],
+"Input",CellChangeTimes -> {{3.43542144359375`*^9,3.43542147734375`*^9},3.435421600453125`*^9,{3.467224365625`*^9,3.467224397125`*^9}},
+CellLabel -> "In[18]:= ",ExpressionUUID -> "0af15c7c-2dc8-4a60-920a-340bfd6b6c8e"],Cell[
+BoxData[
+"8.755601689410241`",StandardForm],"Print",ExpressionUUID -> "c7b6bbf2-fb14-41bd-a229-c440e05d4631"],Cell[
+BoxData[
+"7.8359551503398`",StandardForm],"Print",ExpressionUUID -> "977c3e1f-923c-4236-972f-a6c9008e7020"],Cell[
+BoxData[
+"6.559876214429767`",StandardForm],"Print",ExpressionUUID -> "018040a0-7907-4cff-a621-24d4717ca367"],Cell[
+BoxData[
+"9.267971052578753`",StandardForm],"Print",ExpressionUUID -> "ebc8b7bc-7c83-43f5-a1d5-754db83a0ef9"]},
+Open],ExpressionUUID -> "a66b1d26-e41d-46fd-83db-64275680b477"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"Do","[",RowBox[{RowBox[{"Print","[",RowBox[{"Random","[",RowBox[
+{"Integer",",",RowBox[{"{",RowBox[{RowBox[{"-","2"}],",","10"}],"}"}]}],"]"}],"]"}],",",RowBox[
+{"{","4","}"}]}],"]"}]],"Input",CellChangeTimes -> {{3.43542144359375`*^9,3.43542147734375`*^9},3.435421600453125`*^9,{3.467224365625`*^9,3.467224429390625`*^9}},
+CellLabel -> "In[19]:= ",ExpressionUUID -> "b03bfbf5-8fe6-4cec-827a-394440cb218b"],Cell[
+BoxData[
+"5",StandardForm],"Print",ExpressionUUID -> "5db27cb8-9eb3-4958-b6bb-fc2ef24db37f"],Cell[
+BoxData[
+"8",StandardForm],"Print",ExpressionUUID -> "211cc6e7-fe2f-4d57-accc-827cbeef65df"],Cell[
+BoxData[
+"6",StandardForm],"Print",ExpressionUUID -> "ea432e0c-1c01-4820-847a-6e938833432c"],Cell[
+BoxData[
+"3",StandardForm],"Print",ExpressionUUID -> "15c045fb-e4b3-49b9-848c-98630bcf323c"]},
+Open],ExpressionUUID -> "22ddba9b-7cd7-44e2-9cc9-4a97104d1bb8"]},Open],ExpressionUUID -> "b7acbe41-8b07-4dbe-b26b-5707f8ff6a61"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad\>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9},{3.558803960533272`*^9,3.5588039660032797`*^9},{3.558804120675496`*^9,3.5588041216854973`*^9},3.5588055648806458`*^9,{3.5588056455657587`*^9,3.5588056460557594`*^9},{3.558805694795828`*^9,3.558805720026863`*^9},{3.558805812756993`*^9,3.5588058133069935`*^9},{3.5588075592769666`*^9,3.558807560176968`*^9}},
+ExpressionUUID -> "829ecac1-c7a5-4492-8cec-09f47c8fc623"],Cell[
+TextData[{"Lodn\[EAcute] motory so vstrekovan\[IAcute]m Common-Rail maj\[UAcute] menovit\[YAcute] v\[YAcute]kon ",Cell[
+BoxData[
+FormBox[SubscriptBox["P","m"],TraditionalForm]],ExpressionUUID -> "31f244e0-1805-49ae-97bf-fe023d05ac70"]," v\[NonBreakingSpace]rozsahu 12 000 a","\[ZHacek]"," 70\[NonBreakingSpace]000 kW.  Po\[CHacek]as plavby motor pracuje na v\[YAcute]kon P rovn\[YAcute] 75 % menovit\[EAcute]ho v\[YAcute]konu. \[CapitalSHacek]pecifick\[AAcute] spotreba paliva je ",Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["m","p"],"=",RowBox[{"170","\[NonBreakingSpace]",RowBox[
+{"g","/","kWh"}]}]}],TraditionalForm]],ExpressionUUID -> "fe86e23b-97cd-4901-b027-6afece5bb995"],"\[NonBreakingSpace]. Zostavte program, ktor\[YAcute] vyp\[IAcute]\[SHacek]e na monitor tabu\:013eku vyjadruj\[UAcute]cu z\[AAcute]vislos\[THacek] spotreby paliva ",Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["S",RowBox[{"p","  "}]],"[",RowBox[{"kg","/","h"}],"]"}],
+TraditionalForm]],ExpressionUUID -> "9cbdb8c3-4b86-49bf-a438-21b53917ed90"]," od v\[YAcute]konu motora  ",Cell[
+BoxData[
+FormBox["P",TraditionalForm]],ExpressionUUID -> "193cae7b-57c0-4653-b380-bfee8ebc5d75"]," . Po\[CHacek]\[IAcute]tajte s\[NonBreakingSpace]krokom  ",Cell[
+BoxData[
+FormBox[RowBox[{"\[CapitalDelta]P"," ","="," ",RowBox[{"4350","  ","kW"}]}],TraditionalForm]],
+ExpressionUUID -> "2f664b0e-8864-417b-b962-33da28f0d71f"],"."}],"Text",CellChangeTimes -> {{3.435458133640625`*^9,3.435458134921875`*^9},{3.435458350328125`*^9,3.4354584615`*^9},{3.435459004203125`*^9,3.4354590256875`*^9},{3.435468948223`*^9,3.435468963473`*^9},{3.435602195203125`*^9,3.435602202125`*^9},{3.435602232453125`*^9,3.43560247146875`*^9},{3.43560319478125`*^9,3.43560319703125`*^9},3.435654856296875`*^9,{3.467229066546875`*^9,3.4672291479375`*^9},{3.46722921215625`*^9,3.46722921346875`*^9},{3.4672292619375`*^9,3.46722928396875`*^9},3.467369717796875`*^9,{3.467372290546875`*^9,3.4673722916875`*^9},{3.467400466140625`*^9,3.467400467265625`*^9},{3.5588075368669353`*^9,3.5588075372169356`*^9},3.5937684424872355`*^9,3.5937684883973`*^9},
+ExpressionUUID -> "10585ed5-3fb6-45be-8646-a2da70ab0336"],Cell[
+TextData[{"N\[CapitalAAcute]VOD :\nAk dosad\[IAcute]me \[SHacek]pecifick\[UAcute] spotrebu v ",Cell[
+BoxData[
+FormBox[RowBox[{"g","/","kWh"}],TraditionalForm]],ExpressionUUID -> "6b4775d9-0319-4cc3-8753-8be40ab5e9ee"]," a\[NonBreakingSpace]v\[YAcute]kon v ",Cell[
+BoxData[
+FormBox["kW",TraditionalForm]],ExpressionUUID -> "3bb011ea-15ef-4ffa-b5d5-cc12f630a5f4"]," , spotrebu paliva v\[NonBreakingSpace]",Cell[
+BoxData[
+FormBox[RowBox[{"kg","/","h"," "}],TraditionalForm]],ExpressionUUID -> "6b6f71b0-a719-4177-93a9-8d287443cd57"]," vypo\[CHacek]\[IAcute]tame pod\:013ea vzorca  ",Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["S","p"],"=",FractionBox[RowBox[{SubscriptBox["m","p"],"P"}],
+"1000"]}],TraditionalForm]],ExpressionUUID -> "be42c276-4d92-4325-a0c5-64e495597e2c"]," .  Hranice pre v\[YAcute]kon ",Cell[
+BoxData[
+FormBox[RowBox[{"P","  "}],TraditionalForm]],ExpressionUUID -> "5d9d144f-7522-47a2-b5e5-ff6157f800c7"],"vypo\[CHacek]\[IAcute]tame zo vz","\[THacek]","ahu ",Cell[
+BoxData[
+FormBox[RowBox[{RowBox[{"P"," ","="," ","0"}],",",RowBox[{"75"," ","."," ",SubscriptBox[
+"P","m"]," "}]}],TraditionalForm]],ExpressionUUID -> "4c7b4ee9-ba4a-44c2-b7c7-c835b5d82de8"]}],
+"Text",CellChangeTimes -> {{3.435458133640625`*^9,3.435458134921875`*^9},{3.435458350328125`*^9,3.4354584615`*^9},{3.435459004203125`*^9,3.4354590256875`*^9},{3.435468948223`*^9,3.435468963473`*^9},{3.435602195203125`*^9,3.435602202125`*^9},{3.435602232453125`*^9,3.43560247146875`*^9},{3.43560319478125`*^9,3.43560319703125`*^9},3.435654856296875`*^9,{3.467229066546875`*^9,3.4672291988125`*^9},{3.467369743875`*^9,3.467369745171875`*^9},{3.46737005278125`*^9,3.46737006159375`*^9},3.593768442627236`*^9},
+ExpressionUUID -> "916b3568-ddb2-4184-b566-8b5b01adcdf0"],Cell[
+CellGroupData[{Cell[
+
+"\<N\[AAcute]pad 1  - najz\[AAcute]kladnej\[SHacek]ie procedur\[AAcute]lne programovanie - primit\[IAcute]vny sp\[OHat]sob vytvorenia tabu\:013eky\>",
+"Subsubsection",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9},3.4672258904375`*^9,{3.467225992734375`*^9,3.467226011875`*^9},{3.467226197453125`*^9,3.467226208765625`*^9},{3.46722648678125`*^9,3.467226508609375`*^9},{3.467226555125`*^9,3.467226570125`*^9},3.46722799753125`*^9,{3.46722931621875`*^9,3.467229330875`*^9},{3.652690715754162`*^9,3.6526907251135592`*^9}},
+ExpressionUUID -> "98975cb9-6cb2-4827-a95e-f535f74ad18b"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{RowBox[{"mp","=","170"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[
+{"Pmin","=","12000"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"Pmax","=","70000"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"krok","=","4350"}],";"}],"\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{"Print","[","\"P[kW]\\t\\tSp[kg/h]\"","]"}],"\[IndentingNewLine]",RowBox[{"Print","[","\"_________________________\"","]"}],"\[IndentingNewLine]",RowBox[
+{"Do","["," ",RowBox[{RowBox[{RowBox[{"P","=",RowBox[{"0.75","*","Pm"}]}],";","\n","     ",RowBox[
+{"Sp","=",RowBox[{"mp","*",RowBox[{"P","/","1000"}]}]}],";","\[IndentingNewLine]","     ",RowBox[
+{"Print","[",RowBox[{"P",",","\"\\t\\t\"",",","Sp"}],"]"}]}],",","\[IndentingNewLine]","     ",RowBox[
+{"{",RowBox[{"Pm",",","Pmin",",","Pmax",",","krok"}],"}"}]}],"]"}]}]],"Input",CellChangeTimes -> {{3435602536.765625`,3435602686.203125`},{3435602763.953125`,3435602941.953125`},{3435602972.484375`,3435603011.5625`},{3436014087.3893747`,3436014102.2018747`},3467229302.984375`,{3467369604.4375`,3467369605.75`},{3467369765.21875`,3467369768.703125`},{3467369828.671875`,3467369843.28125`}},
+CellLabel -> "In[41]:= ",ExpressionUUID -> "6b55301e-5ee0-466b-9568-d302c51ad14f"],Cell[
+BoxData[
+"\"P[kW]\\t\\tSp[kg/h]\"",StandardForm],"Print",ExpressionUUID -> "669c6632-a638-43c5-bec2-2efd50f3f63d"],Cell[
+BoxData[
+"\"_________________________\"",StandardForm],"Print",ExpressionUUID -> "a9571173-9d78-44be-a4e1-de6de876c96a"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"9000.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","1530.`"}],
+SequenceForm[9000.`,"\t\t",1530.`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "ce38df64-e938-426b-8624-a4ecc35c6ee4"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"12262.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","2084.625`"}],
+SequenceForm[12262.5`,"\t\t",2084.625`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "65e1d8fc-8e68-4802-b2ba-0621fed89173"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"15525.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","2639.25`"}],
+SequenceForm[15525.`,"\t\t",2639.25`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "80b0a72b-194b-4293-b076-0c3bc825060d"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"18787.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","3193.8750000000005`"}],
+SequenceForm[18787.5`,"\t\t",3193.8750000000005`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "70fd725e-abb8-44b8-9ace-6fa9413d667e"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"22050.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","3748.5`"}],
+SequenceForm[22050.`,"\t\t",3748.5`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "f55e456f-36ea-4bee-8636-990faa47d960"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"25312.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","4303.125`"}],
+SequenceForm[25312.5`,"\t\t",4303.125`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "c01a037a-c1d4-43ac-8039-50eb05a32103"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"28575.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","4857.75`"}],
+SequenceForm[28575.`,"\t\t",4857.75`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "2b6b9747-27be-4b45-8bdd-082b04261d78"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"31837.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","5412.375`"}],
+SequenceForm[31837.5`,"\t\t",5412.375`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "32e4e581-d158-473c-8316-ed0f577e75ae"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"35100.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","5967.`"}],
+SequenceForm[35100.`,"\t\t",5967.`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "f421cf0a-6523-48a1-ad60-c3ff62c39c2b"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"38362.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","6521.625000000001`"}],
+SequenceForm[38362.5`,"\t\t",6521.625000000001`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "f6c30924-b52a-4fcc-b671-1e2607d1656a"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"41625.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","7076.25`"}],
+SequenceForm[41625.`,"\t\t",7076.25`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "838918d6-cfb1-42e8-8f63-5bae9d1b8beb"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"44887.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","7630.875000000001`"}],
+SequenceForm[44887.5`,"\t\t",7630.875000000001`],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "a975a5dd-b3aa-4280-aaf3-7e4f7c11a372"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"48150.`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","8185.5`"}],
+SequenceForm[48150.`,"\t\t",8185.5`],Editable -> False],StandardForm],"Print",ExpressionUUID -> "3d7d1aed-ec77-42a7-a031-f7036fdfd185"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"51412.5`","\[InvisibleSpace]","\"\\t\\t\"","\[InvisibleSpace]","8740.125`"}],
+SequenceForm[51412.5`,"\t\t",8740.125`],Editable -> False],StandardForm],"Print",
+ExpressionUUID -> "b08414eb-6440-4c2b-b86b-8c5c2eef55df"]},Open],ExpressionUUID -> "d975735c-87ce-460d-9a1c-b75ed59c61d2"]},
+Open],ExpressionUUID -> "bb7c999c-0eba-4b50-9472-680663981cd0"],Cell[
+CellGroupData[
+{Cell[
+"\<N\[AAcute]pad 2  - naprogramovan\[EAcute] pomocou definovania funkcie\>",
+"Subsubsection",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9},3.4672258904375`*^9,{3.467225992734375`*^9,3.467226011875`*^9},{3.467226197453125`*^9,3.467226208765625`*^9},{3.46722648678125`*^9,3.467226508609375`*^9},{3.467226555125`*^9,3.467226570125`*^9},3.46722799753125`*^9,{3.46722931621875`*^9,3.4672293789375`*^9}},
+ExpressionUUID -> "12a4399c-88a7-43de-aa4a-53b0a32f4b42"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[",RowBox[{"mp",",","Pmin",",","Pmax",",","krok",","," ","Sp"}],"]"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"mp","=","170"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"Pmin","=","12000"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"Pmax","=","70000"}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"krok","=","4350"}],";"}],"\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"Sp","[","P_","]"}],":=",RowBox[{"(",RowBox[{"mp","*","0.75","*",RowBox[
+{"P","/","1000"}]}],")"}]}],";"}],"\[IndentingNewLine]",RowBox[{RowBox[{"vysledok","=",RowBox[
+{"Table","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"0.75","*","P"}],",",RowBox[{"Sp","[","P","]"}]}],"}"}],","," ",RowBox[
+{"{",RowBox[{"P",",","Pmin",",","Pmax",",","krok"}],"}"}]}],"]"}]}],";"}],"\[IndentingNewLine]",RowBox[
+{"TableForm","[",RowBox[{"vysledok",",",RowBox[{"TableHeadings","\[Rule]",RowBox[
+{"{",RowBox[{"None",",",RowBox[{"{",RowBox[{"\"P[kW]\"",",","\"Sp[kg/h]\""}],"}"}]}],"}"}]}],",",RowBox[
+{"TableSpacing","\[Rule]",RowBox[{"{",RowBox[{"1",",","4"}],"}"}]}]}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435602536.765625`,3435602686.203125`},{3435602763.953125`,3435602941.953125`},{3435602972.484375`,3435603011.5625`},{3436014087.3893747`,3436014102.2018747`},3467229302.984375`,{3467229383.6875`,3467229516.484375`},{3467369866.265625`,3467369923.03125`}},
+CellLabel -> "In[64]:= ",ExpressionUUID -> "7fb96243-be40-4ab6-ade1-8ba7ea16ed9f"],Cell[
+BoxData[
+TagBox[TagBox[GridBox[{{TagBox["\"P[kW]\"",HoldForm],TagBox["\"Sp[kg/h]\"",HoldForm]},{"9000.`","1530.`"},{"12262.5`","2084.625`"},{"15525.`","2639.25`"},{"18787.5`","3193.875`"},{"22050.`","3748.5`"},{"25312.5`","4303.125`"},{"28575.`","4857.75`"},{"31837.5`","5412.375`"},{"35100.`","5967.`"},{"38362.5`","6521.625`"},{"41625.`","7076.25`"},{"44887.5`","7630.875`"},{"48150.`","8185.5`"},{"51412.5`","8740.125`"}},
+RowSpacings -> 1,ColumnSpacings -> 4,RowAlignments -> Baseline,ColumnAlignments -> Left,
+GridBoxDividers -> {"Columns" -> {{False}},"Rows" -> {False,True,{False},False}},
+ColumnAlignments -> Left],{None,OutputFormsDump`HeadedColumns}],Function[BoxForm`e$,
+TableForm[BoxForm`e$,TableHeadings -> {None,{"P[kW]","Sp[kg/h]"}},TableSpacing -> {1,4}]]],
+StandardForm],"Output",CellLabel -> "Out[71]//TableForm= ",ExpressionUUID -> "04ad6557-c16a-4a35-92d4-150d923ed129"]},
+Open],ExpressionUUID -> "e8e43801-eb0c-4eaa-8807-a52d356abf17"]},Open],ExpressionUUID -> "2c088363-a587-4fe2-8c5c-8886d5d63663"],Cell[
+CellGroupData[
+{Cell[
+"\<N\[AAcute]pad 2A  - naprogramovan\[EAcute] pomocou definovania funkcie\>",
+"Subsubsection",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9},3.4672258904375`*^9,{3.467225992734375`*^9,3.467226011875`*^9},{3.467226197453125`*^9,3.467226208765625`*^9},{3.46722648678125`*^9,3.467226508609375`*^9},{3.467226555125`*^9,3.467226570125`*^9},3.46722799753125`*^9,{3.46722931621875`*^9,3.4672293789375`*^9},3.46722953803125`*^9},
+ExpressionUUID -> "ef29723a-a36c-4a2b-b549-2cb805edd724"],Cell[
+TextData[{"V \[UAcute]lohe je zbyto\[CHacek]n\[EAcute] definova\[THacek] samostatne premenn\[EAcute] ",Cell[
+BoxData[
+FormBox["Pmin",TraditionalForm]],ExpressionUUID -> "6a01cb21-a3b1-4716-ac07-6a42ee016609"],", ",Cell[
+BoxData[
+FormBox["Pmax",TraditionalForm]],ExpressionUUID -> "e2d6dd7b-c40a-4f50-bf95-4d0277e5d6a1"]," a ",Cell[
+BoxData[
+FormBox["krok",TraditionalForm]],ExpressionUUID -> "7e974354-44b9-4b11-980c-96d5ec8ddb0b"]," . Sta\[CHacek]\[IAcute] potrebn\[EAcute] hodnoty dosadi","\[THacek]"," priamo do v\[YAcute]po\[CHacek]tu"}],
+"Text",CellChangeTimes -> {{3.467229543234375`*^9,3.46722961896875`*^9},{3.5937684429172363`*^9,3.5937684429672365`*^9}},
+ExpressionUUID -> "fa01d131-634c-4456-9587-3707c28c3899"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","["," ","Sp","]"}],"\[IndentingNewLine]","\[IndentingNewLine]",RowBox[
+{RowBox[{RowBox[{"Sp","[","P_","]"}],":=",RowBox[{"170","*","0.75","*",RowBox[{"P","/","1000"}]}]}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"vysledok","=",RowBox[{"Table","[",RowBox[{RowBox[{"{",RowBox[{RowBox[{"0.75","*","P"}],",",RowBox[
+{"Sp","[","P","]"}]}],"}"}],","," ",RowBox[{"{",RowBox[{"P",",","12000",",","70000",",","4350"}],"}"}]}],"]"}]}],";"}],"\[IndentingNewLine]",RowBox[
+{"TableForm","[",RowBox[{"vysledok",",",RowBox[{"TableHeadings","\[Rule]",RowBox[
+{"{",RowBox[{"None",",",RowBox[{"{",RowBox[{"\"P [kW]\"",",","\"\!\(\*SubscriptBox[\"S\", \"p\"]\) [kg/h]\""}],"}"}]}],"}"}]}],",",RowBox[
+{"TableSpacing","\[Rule]",RowBox[{"{",RowBox[{"1",",","4"}],"}"}]}]}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435602536.765625`,3435602686.203125`},{3435602763.953125`,3435602941.953125`},{3435602972.484375`,3435603011.5625`},{3436014087.3893747`,3436014102.2018747`},3467229302.984375`,{3467229383.6875`,3467229516.484375`},{3467229626.640625`,3467229653.75`},{3467369949.671875`,3467369966`},{3467370168.6875`,3467370169.6875`}},
+CellLabel -> "In[72]:= ",ExpressionUUID -> "4261a0bb-84a7-4f5d-93a8-1f1a799e4cca"],Cell[
+BoxData[
+TagBox[TagBox[GridBox[{{TagBox["\"P [kW]\"",HoldForm],TagBox["\"\\!\\(\\*SubscriptBox[\\\"S\\\", \\\"p\\\"]\\) [kg/h]\"",
+HoldForm]},{"9000.`","1530.`"},{"12262.5`","2084.625`"},{"15525.`","2639.25`"},{"18787.5`","3193.875`"},{"22050.`","3748.5`"},{"25312.5`","4303.125`"},{"28575.`","4857.75`"},{"31837.5`","5412.375`"},{"35100.`","5967.`"},{"38362.5`","6521.625`"},{"41625.`","7076.25`"},{"44887.5`","7630.875`"},{"48150.`","8185.5`"},{"51412.5`","8740.125`"}},
+RowSpacings -> 1,ColumnSpacings -> 4,RowAlignments -> Baseline,ColumnAlignments -> Left,
+GridBoxDividers -> {"Columns" -> {{False}},"Rows" -> {False,True,{False},False}},
+ColumnAlignments -> Left],{None,OutputFormsDump`HeadedColumns}],Function[BoxForm`e$,
+TableForm[BoxForm`e$,TableHeadings -> {None,{"P [kW]","\!\(\*SubscriptBox[\"S\", \"p\"]\) [kg/h]"}},
+TableSpacing -> {1,4}]]],StandardForm],"Output",CellLabel -> "Out[75]//TableForm= ",
+ExpressionUUID -> "3b07cf13-5add-43c8-b849-35cb17ad64a3"]},Open],ExpressionUUID -> "07890d3a-07d7-42b9-9e44-7e163da6e838"]},
+Open],ExpressionUUID -> "11a34bce-9de1-4058-a507-9fc8df9d140c"]},Open],ExpressionUUID -> "35adaadb-84d7-4e34-8d52-cf5dad8cd836"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad \>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9},{3.558803960533272`*^9,3.5588039660032797`*^9},{3.558804120675496`*^9,3.5588041216854973`*^9},{3.558807166248416`*^9,3.558807166808417`*^9}},
+ExpressionUUID -> "fa2af0f8-d420-480a-b43e-b47d26140ffd"],Cell[
+TextData[{"Pomocou cyklu vytvor tabu\:013eku 10-tich dvoj\[IAcute]c v tvare:  ",Cell[
+BoxData[
+FormBox["n",TraditionalForm]],ExpressionUUID -> "f38976af-cd19-45a0-a17d-7d6ec67a369d"],"- poradie a ",Cell[
+BoxData[
+FormBox[SubscriptBox["x","n"],TraditionalForm]],ExpressionUUID -> "d7d57f4d-fea2-4e14-aae9-22e2f24d4228"],", ak ",Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["x",RowBox[{"n","+","1"}]],"="}],TraditionalForm]],ExpressionUUID -> "7e781d8b-4916-4e01-b6a2-453a44039b9f"],Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["x","n"],"+","i"}],TraditionalForm]],ExpressionUUID -> "f9428d06-ac87-467e-b9b4-0c64699c285e"],", kde ",Cell[
+BoxData[
+FormBox["i",TraditionalForm]],ExpressionUUID -> "0fbe1856-8db2-4835-a19c-f39dfad25ff2"]," je n\[AAcute]hodn\[EAcute] \[CHacek]\[IAcute]slo, ",Cell[
+BoxData[
+FormBox[RowBox[{"i","\[Element]",RowBox[{"[",RowBox[{"1",",","5"}],"]"}]}],TraditionalForm]],
+ExpressionUUID -> "c5733c2e-014c-42dd-a5b9-e3266517ee3c"],". Ako po\[CHacek]iato\[CHacek]n\[UAcute] hodnotu zvo\:013ete ",Cell[
+BoxData[
+FormBox[RowBox[{SubscriptBox["x","0"],"=","0"}],TraditionalForm]],ExpressionUUID -> "13db8326-8f59-4ea6-b981-4905b9c162f6"],"."}],
+"Text",CellChangeTimes -> {{3.435467613631125`*^9,3.43546774814675`*^9},{3.43546784795925`*^9,3.43546790552175`*^9},{3.435468148724875`*^9,3.43546818064675`*^9},{3.435468392037375`*^9,3.43546852764675`*^9},{3.4354685632405`*^9,3.43546880819175`*^9},{3.558840533873045`*^9,3.558840604913144`*^9},{3.558840655173215`*^9,3.5588406978132744`*^9},{3.5588407458133416`*^9,3.5588407508533487`*^9},{3.558840845503481`*^9,3.5588408520934906`*^9},{3.5588409083835692`*^9,3.5588409172635813`*^9}},
+ExpressionUUID -> "0adff24e-3d19-4781-8302-59e44a7685fe"],Cell[
+BoxData[{RowBox[{RowBox[
+{RowBox[{"x","[","0","]"}],"=","0"}],";"}],"\[IndentingNewLine]",RowBox[{"Do","[",RowBox[
+{RowBox[{RowBox[{"x","[",RowBox[{"n","+","1"}],"]"}],"=",RowBox[{RowBox[{"x","[","n","]"}],"+",RowBox[
+{"Random","[",RowBox[{"Real",",",RowBox[{"{",RowBox[{"1",",","5"}],"}"}]}],"]"}]}]}],",",RowBox[
+{"{",RowBox[{"n",",","0",",","10"}],"}"}]}],"]"}]}],"Input",CellChangeTimes -> {{3.558840613563156`*^9,3.558840638543192`*^9},{3.5588407009832788`*^9,3.5588407713133774`*^9},{3.5588408027934217`*^9,3.5588408031934223`*^9}},
+CellLabel -> "In[76]:= ",ExpressionUUID -> "f48eaad2-072b-42c1-ab9a-512061a4c650"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"TableForm","[",RowBox[{RowBox[{"Table","[",RowBox[{RowBox[
+{"{",RowBox[{"n",",",RowBox[{"x","[","n","]"}]}],"}"}],",",RowBox[{"{",RowBox[{"n",",","0",",","10"}],"}"}]}],"]"}],","," ",RowBox[
+{"TableHeadings","\[Rule]",RowBox[{"{",RowBox[{"None",",",RowBox[{"{",RowBox[{"\"n\"",","," ","\"xn\""}],"}"}]}],"}"}]}],","," ",RowBox[
+{"TableAlignments","\[Rule]","Center"}]}],"]"}]],"Input",CellChangeTimes -> {{3558840776.973385`,3558840893.703549`}},
+CellLabel -> "In[79]:= ",ExpressionUUID -> "6cfe8878-73e5-497f-8ccc-cbea29c71b52"],Cell[
+BoxData[
+TagBox[TagBox[GridBox[{{TagBox["\"n\"",HoldForm],TagBox["\"xn\"",HoldForm]},{"0","0"},{"1","3.599834832251383`"},{"2","5.413210865453808`"},{"3","10.337806918284128`"},{"4","11.944622968579576`"},{"5","13.32863674635095`"},{"6","16.1262935274444`"},{"7","18.10543641193555`"},{"8","22.9438004829546`"},{"9","25.792956088895917`"},{"10","28.61134297723962`"}},
+RowSpacings -> 1,ColumnSpacings -> 3,RowAlignments -> Center,ColumnAlignments -> Center,
+GridBoxDividers -> {"Columns" -> {{False}},"Rows" -> {False,True,{False},False}},
+ColumnAlignments -> Left],{None,OutputFormsDump`HeadedColumns}],Function[BoxForm`e$,
+TableForm[BoxForm`e$,TableHeadings -> {None,{"n","xn"}},TableAlignments -> Center]]],
+StandardForm],"Output",CellLabel -> "Out[79]//TableForm= ",ExpressionUUID -> "337170c8-3c30-4b53-9044-6333cdbbfe35"]},
+Open],ExpressionUUID -> "a87cd462-da1c-4e69-a45b-6215576cff68"]},Open],ExpressionUUID -> "b6d65a4e-cbfa-4903-a2ad-fd320a7d32f9"],Cell[
+CellGroupData[
+{Cell[
+"\<Pr\[IAcute]klad \>","Subsection",CellChangeTimes -> {{3.557596290815071`*^9,3.557596301175085`*^9},{3.55759753655482`*^9,3.557597538184822`*^9},{3.5576384467452717`*^9,3.5576384602767816`*^9},{3.557640278686694`*^9,3.5576402806554823`*^9},{3.557672813015625`*^9,3.5576728134375`*^9},{3.558158687579955`*^9,3.5581586912799597`*^9},{3.558803960533272`*^9,3.5588039660032797`*^9},{3.558804120675496`*^9,3.5588041216854973`*^9},{3.558807166248416`*^9,3.558807166808417`*^9}},
+ExpressionUUID -> "07581080-7956-4584-ace2-380dcefdcf70"],Cell[
+TextData[{"Vytvorte mno\[ZHacek]inu ",Cell[
+BoxData[
+FormBox["A",TraditionalForm]],ExpressionUUID -> "7da88ee4-d123-4675-bb9a-7f0cceb3a99e"]," tvoren\[UAcute] 12-timi n\[AAcute]hodn\[YAcute]ch re\[AAcute]lnych \[CHacek]\[IAcute]sel z\[NonBreakingSpace]intervalu [1, 10]. Zistite\n1.\tpo\[CHacek]et \[CHacek]\[IAcute]sel z danej mno\[ZHacek]iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5,\n2.\ts\[UAcute]\[CHacek]et \[CHacek]\[IAcute]sel z danej mno\[ZHacek]iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5 .\n3.         po\[CHacek]et a s\[UAcute]\[CHacek]et \[CHacek]\[IAcute]sel z danej mno","\[ZHacek]","iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5 ."}],
+"Text",CellChangeTimes -> {{3.435467613631125`*^9,3.43546774814675`*^9},{3.43546784795925`*^9,3.43546790552175`*^9},{3.435468148724875`*^9,3.43546818064675`*^9},{3.435468392037375`*^9,3.43546852764675`*^9},{3.4354685632405`*^9,3.43546880819175`*^9},{3.436003115269875`*^9,3.436003154973`*^9},{3.4360031884105`*^9,3.43600331894175`*^9},{3.4360122924362497`*^9,3.4360122947487497`*^9},{3.467224443890625`*^9,3.467224470109375`*^9},{3.467224515921875`*^9,3.467224516609375`*^9},{3.558807134928372`*^9,3.558807178118432`*^9},{3.593768484017294`*^9,3.5937684842172937`*^9}},
+ExpressionUUID -> "bae88085-a4f7-4a8b-b877-7ad58a5c9f61"],Cell[
+TextData[{"Vytvor\[IAcute]me mno\[ZHacek]inu ",Cell[
+BoxData[
+FormBox["A",TraditionalForm]],ExpressionUUID -> "2a117d30-aba8-4a6d-9c8a-73ca0dfc9b71"]," s po\[ZHacek]adovan\[YAcute]mi vlastnos\[THacek]ami. Uk\[AAcute]\[ZHacek]eme si, ako sa daj\[UAcute] z mno","\[ZHacek]","iny A vybra\[THacek] jednotliv\[EAcute] prvky."}],
+"Text",CellChangeTimes -> {{3.4360120418268747`*^9,3.4360120601862497`*^9},{3.467224545734375`*^9,3.46722458525`*^9},{3.593768437997229`*^9,3.5937684380372295`*^9},{3.593768484307294`*^9,3.5937684844372945`*^9}},
+ExpressionUUID -> "bfd38d6a-20da-4db3-9d19-abea63d569bf"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"A","=",RowBox[{"Table","[",RowBox[{RowBox[{"Random","[",RowBox[{"Real",",",RowBox[
+{"{",RowBox[{"1",",","10"}],"}"}]}],"]"}],",",RowBox[{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}]}]],
+"Input",CellChangeTimes -> {{3.467224480953125`*^9,3.467224519`*^9}},CellLabel -> "In[80]:= ",
+ExpressionUUID -> "715c7918-ec94-4a1d-a2d3-e20f8af0fcff"],Cell[
+BoxData[RowBox[{"{",RowBox[
+{"3.1497653161404813`",",","8.430731275775452`",",","3.823270952381208`",",","5.056070766173939`",",","2.3808291452338297`",",","9.693251647856926`",",","9.204352739135288`",",","6.775495995700512`",",","8.785991641443733`",",","2.933168606918488`",",","4.099633468523647`",",","3.96771880972693`"}],"}"}],
+StandardForm],"Output",CellLabel -> "Out[80]= ",ExpressionUUID -> "0d6d3839-c03a-4299-9454-41f02f67d285"]},
+Open],ExpressionUUID -> "f3d048c8-ad99-45dd-9df7-61ce1b9a38ce"],Cell[
+"\<Toto je nov\[AAcute] vec - preber\[AAcute] sa a\[ZHacek] na predn\[AAcute]\[SHacek]ke venovanej poliam. Prvok z po\:013ea vyberieme pomocou konvencie o dvoch z\[AAcute]tvork\[AAcute]ch. Vyberieme prv\[YAcute] prvok, piaty prvok a deviaty (\[SHacek]tvrt\[YAcute] od konca) prvok\>",
+"Text",CellChangeTimes -> {{3.4360120418268747`*^9,3.4360120601862497`*^9},{3.467224545734375`*^9,3.4672245476875`*^9},{3.467224591453125`*^9,3.46722460465625`*^9},{3.467224645640625`*^9,3.4672246584375`*^9},{3.652524989798273`*^9,3.6525250308342714`*^9}},
+ExpressionUUID -> "8789c080-b902-4b56-be4e-ffd8ec86cbe2"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{"A","[",RowBox[{"[","1","]"}],"]"}]],"Input",CellChangeTimes -> {{3.467224606734375`*^9,3.467224610890625`*^9}},
+CellLabel -> "In[81]:= ",ExpressionUUID -> "5273602a-371b-4591-8d9e-dc003473e721"],Cell[
+BoxData[
+"3.1497653161404813`",StandardForm],"Output",CellLabel -> "Out[81]= ",ExpressionUUID -> "90c69f1d-daca-4dda-8e9c-a85352db3825"]},
+Open],ExpressionUUID -> "e926b801-7885-4c86-9622-bf63e5d90f28"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"A","[",RowBox[{"[","5","]"}],"]"}]],"Input",CellChangeTimes -> {{3.46722461290625`*^9,3.46722461440625`*^9}},
+CellLabel -> "In[82]:= ",ExpressionUUID -> "c7d9d59d-b134-4c4b-8018-4f96accde97b"],Cell[
+BoxData[
+"2.3808291452338297`",StandardForm],"Output",CellLabel -> "Out[82]= ",ExpressionUUID -> "4cf5d38d-4908-41d5-82f6-7fd751980582"]},
+Open],ExpressionUUID -> "66ae9065-084e-477a-be8c-ed87e1fe99e1"],Cell[
+CellGroupData[
+{Cell[
+BoxData[RowBox[{"A","[",RowBox[{"[",RowBox[{"-","4"}],"]"}],"]"}]],"Input",
+CellChangeTimes -> {{3.46722461625`*^9,3.4672246386875`*^9}},CellLabel -> "In[83]:= ",
+ExpressionUUID -> "15bcc720-702f-4641-bfb1-c228b1c11d5f"],Cell[
+BoxData["8.785991641443733`",
+StandardForm],"Output",CellLabel -> "Out[83]= ",ExpressionUUID -> "f1b803e4-997f-4705-8c5c-a23ecf57c88e"]},
+Open],ExpressionUUID -> "7427d0d1-1e4d-4394-8465-b954fb6bf9ce"],Cell[
+CellGroupData[
+{Cell[
+"\<1. Zistite po\[CHacek]et \[CHacek]\[IAcute]sel z danej mno\[ZHacek]iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5.\>",
+"Subsubsection",CellChangeTimes -> {{3.4360120418268747`*^9,3.4360120601862497`*^9},{3.5588072131514816`*^9,3.5588072437815247`*^9},3.5588074472048097`*^9,3.5937684844672947`*^9,3.593768639857512`*^9},
+ExpressionUUID -> "8d105f81-ab14-4eb7-b763-ddffc8427936"],Cell[
+TextData[StyleBox[
+"N\[AAcute]pad 1",FontWeight -> "Bold"]],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9}},
+ExpressionUUID -> "68dc3de3-f166-464c-a662-5778b1f0947e"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","pocet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"pocet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{"Do","[",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{"pocet","=",RowBox[{"pocet","+","1"}]}]}],"]"}],","," ",RowBox[{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"Pocet cisel mensich ako 5 je \"",",","pocet"}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},3436011670.8268747`,{3436011876.7331247`,3436011881.0612497`},{3467224526.828125`,3467224536.375`},{3467224663.859375`,3467224700.5`},{3467225615.75`,3467225620.921875`}},
+CellLabel -> "In[88]:= ",ExpressionUUID -> "bf4498d4-8caa-47ee-81ac-15a10d837758"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Pocet cisel mensich ako 5 je \"","\[InvisibleSpace]","6"}],
+SequenceForm["Pocet cisel mensich ako 5 je ",6],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "a4c3f0f4-f4c9-4fe3-98d3-4d84ac52f0bb"]},Open],ExpressionUUID -> "d5fce0d2-bd8f-4997-94cf-be830eb28390"],Cell[
+TextData[
+{StyleBox["N\[AAcute]pad 2 - pou",FontWeight -> "Bold"],"\[ZHacek]",StyleBox["\[IAcute]vame konvenciu z programovacieho jazyka C",
+FontWeight -> "Bold"]}],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.4672247389375`*^9},3.46722576171875`*^9,3.5937684844772944`*^9,3.593768643497517`*^9},
+ExpressionUUID -> "1f4fe01a-0568-48cb-8dd4-c194831c896a"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","pocet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"pocet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{"Do","[",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{"pocet","++"}]}],"]"}],",",RowBox[{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"Pocet cisel mensich ako 5 je \"",",","pocet"}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},3436011670.8268747`,{3436011876.7331247`,3436011881.0612497`},{3467224526.828125`,3467224536.375`},{3467224663.859375`,3467224700.5`},{3467224747.984375`,3467224748.125`},{3467225625.21875`,3467225625.90625`}},
+CellLabel -> "In[92]:= ",ExpressionUUID -> "dca3795b-b8e8-48ef-817b-21dabccb8af1"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Pocet cisel mensich ako 5 je \"","\[InvisibleSpace]","6"}],
+SequenceForm["Pocet cisel mensich ako 5 je ",6],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "ccf5b33f-87d4-4d6b-8be7-ed8bc6751832"]},Open],ExpressionUUID -> "d93c7e0b-cbc2-4915-84b7-d2fd06c222b9"]},
+Open],ExpressionUUID -> "de814636-e746-4bf0-8393-c1c4ff23425f"],Cell[
+CellGroupData[
+{Cell[
+"\<2. Zistite s\[UAcute]\[CHacek]et \[CHacek]\[IAcute]sel z danej mno\[ZHacek]iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5.\>",
+"Subsubsection",CellChangeTimes -> {3.4360120418268747`*^9,{3.558807253861539`*^9,3.5588072645315533`*^9},3.5588074454548073`*^9,3.5937684845172944`*^9,3.5937686453155327`*^9},
+ExpressionUUID -> "e3734be2-15aa-4285-becd-8cf670060958"],Cell[
+TextData[StyleBox[
+"N\[AAcute]pad 1",FontWeight -> "Bold"]],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9}},
+ExpressionUUID -> "abb516b2-f737-46ea-9510-2030d9c1fdd6"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","sucet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"sucet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{"Do","[",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{"sucet","=",RowBox[{"sucet","+",RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}]}]}]}],"]"}],",",RowBox[
+{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"Sucet cisel mensich ako 5 je \"",",","sucet"}],"]"}]}]],"Input",CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},{3436003622.269875`,3436003634.644875`},{3436003668.801125`,3436003749.1605`},{3436003784.332375`,3436003787.94175`},{3436011697.1549997`,3436011711.8737497`},{3436011792.6862497`,3436011889.1706247`},{3436011941.0299997`,3436011953.8268747`},3436012044.9206247`,{3467225638.8125`,3467225692.109375`}},
+CellLabel -> "In[96]:= ",ExpressionUUID -> "7bca0231-7eb9-410b-a4c1-28553d230efd"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Sucet cisel mensich ako 5 je \"","\[InvisibleSpace]","20.354386298924585`"}],
+SequenceForm["Sucet cisel mensich ako 5 je ",20.354386298924585`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "3900b869-a011-4651-babe-deb16ec6180c"]},
+Open],ExpressionUUID -> "07bb18d6-8f28-4661-8c0e-a66c4133aeab"],Cell[
+TextData[{StyleBox[
+"N\[AAcute]pad 2 - pou",FontWeight -> "Bold"],"\[ZHacek]",StyleBox["\[IAcute]vame konvenciu z programovacieho jazyka C",
+FontWeight -> "Bold"]}],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.4672247389375`*^9},3.46722576171875`*^9,3.593768484527294`*^9,3.593768647455536`*^9},
+ExpressionUUID -> "93181fef-935b-4260-b45b-89b11613b3d5"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","sucet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"sucet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{"Do","[",RowBox[{RowBox[{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{"sucet","+=",RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}]}]}],"]"}],",",RowBox[{"{",RowBox[
+{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"Sucet cisel mensich ako 5 je \"",",","sucet"}],"]"}]}]],"Input",CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},{3436003622.269875`,3436003634.644875`},{3436003668.801125`,3436003749.1605`},{3436003784.332375`,3436003787.94175`},{3436011697.1549997`,3436011711.8737497`},{3436011792.6862497`,3436011889.1706247`},{3436011941.0299997`,3436011953.8268747`},3436012044.9206247`,{3467225638.8125`,3467225724.140625`}},
+CellLabel -> "In[100]:= ",ExpressionUUID -> "f983f7b9-5b05-45b7-9b20-7264e8de3bd1"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Sucet cisel mensich ako 5 je \"","\[InvisibleSpace]","20.354386298924585`"}],
+SequenceForm["Sucet cisel mensich ako 5 je ",20.354386298924585`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "49c17d62-d654-4c6f-9fb0-e3a00a5735fc"]},
+Open],ExpressionUUID -> "dd38de0e-0c05-4325-a1c4-59fd937c863d"]},Open],ExpressionUUID -> "57b0adbe-eb62-4450-950b-49225b295fde"],Cell[
+CellGroupData[
+{Cell[
+"\<3.  Zistite po\[CHacek]et a s\[UAcute]\[CHacek]et \[CHacek]\[IAcute]sel z danej mno\[ZHacek]iny, ktor\[YAcute]ch hodnota je men\[SHacek]ia ako 5.\>",
+"Subsubsection",CellChangeTimes -> {3.4360120418268747`*^9,3.4360120847174997`*^9,{3.558807281491577`*^9,3.558807283991581`*^9},{3.5588074433318043`*^9,3.5588074502748137`*^9},3.5937684845572944`*^9,3.593768649125538`*^9,{3.6526907869943385`*^9,3.652690796754138`*^9}},
+ExpressionUUID -> "1687e5d1-dcce-4e0e-a56e-ce81b1352cff"],Cell[
+TextData[StyleBox[
+"N\[AAcute]pad 1",FontWeight -> "Bold"]],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.46722472584375`*^9}},
+ExpressionUUID -> "012408e9-94d3-4a92-a19f-9f0e6fffdb19"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","pocet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"pocet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"sucet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[{"Do","[",RowBox[{RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{RowBox[{"pocet","=",RowBox[{"pocet","+","1"}]}],";","\n",RowBox[{"sucet","=",RowBox[
+{"sucet","+",RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}]}]}]}]}],"]"}],",",RowBox[
+{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"Pocet cisel mensich ako 5 je \"",",","pocet"}],"]"}],"\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"Sucet cisel mensich ako 5 je \"",",","sucet"}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},3436011670.8268747`,{3436011876.7331247`,3436011881.0612497`},{3467224526.828125`,3467224536.375`},{3467224663.859375`,3467224700.5`},{3467225615.75`,3467225620.921875`},{3467225841.90625`,3467225874.8125`}},
+CellLabel -> "In[104]:= ",ExpressionUUID -> "6b0caea3-33b0-4341-95c7-c18a1604a09e"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Pocet cisel mensich ako 5 je \"","\[InvisibleSpace]","6"}],
+SequenceForm["Pocet cisel mensich ako 5 je ",6],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "a404fee3-016c-4f32-8e11-31b8673ee5d1"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Sucet cisel mensich ako 5 je \"","\[InvisibleSpace]","20.354386298924585`"}],
+SequenceForm["Sucet cisel mensich ako 5 je ",20.354386298924585`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "e93e8c0b-bfa7-4de9-8fb1-36194af40095"]},
+Open],ExpressionUUID -> "3bd1c648-a731-40b2-b6ae-149972cb76e1"],Cell[
+TextData[{StyleBox[
+"N\[AAcute]pad 2 - pou",FontWeight -> "Bold"],"\[ZHacek]",StyleBox["\[IAcute]vame konvenciu z programovacieho jazyka C",
+FontWeight -> "Bold"]}],"Text",CellChangeTimes -> {{3.467224721484375`*^9,3.4672247389375`*^9},3.46722576171875`*^9,3.5937684845772943`*^9,3.593768651245541`*^9},
+ExpressionUUID -> "d3bdf1ba-1062-4de0-bda8-a8ae488b21ac"],Cell[
+CellGroupData[{Cell[
+BoxData[
+RowBox[{RowBox[{"Clear","[","pocet","]"}],"\[IndentingNewLine]",RowBox[{RowBox[{"pocet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[
+{RowBox[{"sucet","=","0"}],";"}],"\[IndentingNewLine]",RowBox[{"Do","[",RowBox[{RowBox[
+{"If","[",RowBox[{RowBox[{RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}],"<","5"}],",",RowBox[
+{RowBox[{"pocet","++"}],";","\n",RowBox[{"sucet","+=",RowBox[{"A","[",RowBox[{"[","i","]"}],"]"}]}]}]}],"]"}],",",RowBox[
+{"{",RowBox[{"i",",","1",",","12"}],"}"}]}],"]"}],"\[IndentingNewLine]",RowBox[{"Print","[",RowBox[
+{"\"Pocet cisel mensich ako 5 je \"",",","pocet"}],"]"}],"\[IndentingNewLine]",RowBox[
+{"Print","[",RowBox[{"\"Sucet cisel mensich ako 5 je \"",",","sucet"}],"]"}]}]],"Input",
+CellChangeTimes -> {{3435420550.46875`,3435420550.640625`},{3435420664.84375`,3435420858.65625`},3435420912.96875`,3435420972.171875`,3435421032.953125`,{3435421140.390625`,3435421140.5625`},{3435421697.640625`,3435421699.21875`},{3436003335.457375`,3436003590.94175`},3436011670.8268747`,{3436011876.7331247`,3436011881.0612497`},{3467224526.828125`,3467224536.375`},{3467224663.859375`,3467224700.5`},{3467225615.75`,3467225620.921875`},{3467225841.90625`,3467225908.59375`}},
+CellLabel -> "In[110]:= ",ExpressionUUID -> "01d91d46-7526-4345-bd0f-e3672100b994"],Cell[
+BoxData[
+InterpretationBox[RowBox[{"\"Pocet cisel mensich ako 5 je \"","\[InvisibleSpace]","6"}],
+SequenceForm["Pocet cisel mensich ako 5 je ",6],Editable -> False],StandardForm],
+"Print",ExpressionUUID -> "e51c38a4-16cf-4394-876d-ae8c50d8f5d5"],Cell[
+BoxData[InterpretationBox[
+RowBox[{"\"Sucet cisel mensich ako 5 je \"","\[InvisibleSpace]","20.354386298924585`"}],
+SequenceForm["Sucet cisel mensich ako 5 je ",20.354386298924585`],Editable -> False],
+StandardForm],"Print",ExpressionUUID -> "13b1dfa7-6799-4b75-92f0-1caae7d7bebd"]},
+Open],ExpressionUUID -> "d21b75a2-72a0-43d1-ad05-84fe01e0512d"]},Open],ExpressionUUID -> "e3044211-bac8-4cba-bc7e-69cb87407635"]},
+Open],ExpressionUUID -> "8e94936d-6f8e-4921-8081-65bde2dc390a"]},Open],ExpressionUUID -> "dbea3224-5029-4c4c-a32d-3392167fbd20"]},
+StyleDefinitions -> "Default.nb",PrintingCopies -> 1,WindowSize -> {1013,675},WindowMargins -> {{47,Automatic},{Automatic,-36}},
+FrontEndVersion -> "12.3 for Wolfram Cloud 1.61 (October 22, 2021)",PrintingPageRange -> {Automatic,Automatic},
+TaggingRules -> {"SlideshowSettings" -> {"Toolbar" -> True}}]
